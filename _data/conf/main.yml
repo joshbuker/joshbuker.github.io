@@ -62,7 +62,7 @@ sample_replace: "$site_sample"
 ###########################################################
 # to enable search feature, set to true
 # if you disable this feature, you don't need search.json file so please open the file and uncomment the "published: false"
-search_enable: true
+search_enable: false
 
 # if this is true, search list hides with mouse leave event
 # if this is false, search list hides with mouse click event
