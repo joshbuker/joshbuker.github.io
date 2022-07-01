@@ -40,10 +40,6 @@
     {%- if site.data.conf.main.contacts and site.data.owner[lng].contacts.size > 0 -%}
       {% include default/nav/contact-links.html -%}
     {% endif %}
-    <hr>
-    <br>
-    {% include util/embed-audio.html src="/assets/audio/powerline.opus" %}
-    <br>
     <hr id="toc-view-top">
     <div class="side-nav-footer" translate="no">
       {%- if site.data.conf.main.side_nav_footer %}

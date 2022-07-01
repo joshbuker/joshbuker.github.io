@@ -37,7 +37,7 @@ img: ":background.png"
 
 {%- comment -%} Please delete below and place your page content here {%- endcomment -%}
 
-{%- include util/auto-content-generator.liquid -%}
+{% include util/embed-audio.html src="/assets/audio/powerline.opus" %}
 {{ website_info_text_first }}
 
 {{ website_info_text_second }}
