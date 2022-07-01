@@ -8,6 +8,7 @@ img: ":about.jpg"
 # publish date (used for seo)
 # if not specified, site.time will be used.
 #date: 2022-03-03 12:32:00 +0000
+permalink: "/about/"
 
 # for override items in _data/lang/[language].yml
 #title: My title
