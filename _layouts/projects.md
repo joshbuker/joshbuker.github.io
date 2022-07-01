@@ -43,7 +43,7 @@ layout: default
           {%- assign prj_img_path = list.img -%}
           {%- assign prj_img_title = list.img_title -%}
         {% elsif site.data.conf.others.projects.project_img_fill %}
-          {%- assign prj_img_path = "/assets/img/default/1x1px.png" -%}
+          {%- assign prj_img_path = "/assets/images/default/1x1px.png" -%}
           {%- assign prj_img_title = "" -%}
         {% endif %}
         {% if list.img or site.data.conf.others.projects.project_img_fill -%}

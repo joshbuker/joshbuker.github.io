@@ -12,7 +12,7 @@
   {%- if first_chr == ':' -%}
     {%- assign folder = include.layout -%}
     {%- if include.layout == "post" or include.layout == "post-list" -%}{%- assign folder = "posts" -%}{%- endif -%}
-    {%- capture get_img_path_out -%} /assets/img/{{ folder }}{{ include.img_name | replace_first: ':', '/' }} {%- endcapture -%}
+    {%- capture get_img_path_out -%} /assets/images/{{ folder }}{{ include.img_name | replace_first: ':', '/' }} {%- endcapture -%}
   {%- elsif include.img_name != nil and include.img_name != empty -%}
     {%- capture get_img_path_out -%} {{ include.img_name }} {%- endcapture -%}
   {%- endif -%}
