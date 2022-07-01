@@ -234,11 +234,11 @@ copyright_add_end_year: false
 
 # this uses copyright.additional_text defined in _data/lang/[language].yml
 # not recommended if creative_commons is enabled.
-copyright_add_text_to_end: false
+copyright_add_text_to_end: true
 
 # this will add creative commons license. check _data/owner/[language].yml for license type.
 creative_commons:
-  enable: true
+  enable: false
   tooltip: true
   add_all_icons: true
   license_url: "https://creativecommons.org/licenses/$license/4.0/deed.$lng"
