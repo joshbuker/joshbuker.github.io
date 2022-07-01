@@ -1,21 +1,8 @@
 ---
-# multilingual page pair id, this must pair with translations of this page. (This name must be unique)
-# lng_pair: hello_world
 title: Hello World!
-
-# post specific
-# if not specified, .name will be used from _data/owner/[language].yml
-# author: Mr. Green's Workshop
-# multiple category is not supported
-category: general
-# multiple tag entries are possible
-tags: [blog]
-# thumbnail image for post
+category: "general"
+tags: ["blog"]
 img: "/assets/images/stock/hello_world.jpg"
-# disable comments on this page
-#comments_disable: true
-
-# publish date
 date: 2022-06-30 20:45:00 -0700
 
 # seo
