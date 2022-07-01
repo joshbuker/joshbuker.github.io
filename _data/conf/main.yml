@@ -119,11 +119,11 @@ color_scheme_dark: true
 # this sets default color scheme to dark. (color_scheme_dark must be enabled)
 # page start will be dark color scheme. You can change color scheme using switches
 # this feature doesn't need switches.
-color_scheme_default_dark: false
+color_scheme_default_dark: true
 
 # default color will change based on browser dark color scheme (color_scheme_default_dark should be disabled.)
 # you don't need to enable this if any switch is enabled.
-color_scheme_browser_color_mode: true
+color_scheme_browser_color_mode: false
 
 # side nav and top nav color scheme switches
 # when any switch is enabled, if browser color scheme is dark, site default color is set to dark at page load.
