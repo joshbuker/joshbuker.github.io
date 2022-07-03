@@ -3,6 +3,8 @@
 .*
 !.git*
 !.editorconfig
+!.ruby-gemset
+!.ruby-version
 
 # jekyll Cache
 _site
