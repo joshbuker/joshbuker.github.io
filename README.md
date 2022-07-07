@@ -8,4 +8,4 @@ Some photos are royalty-free stock photos. For more information, see the [Stock 
 
 1. `rvm use`
 2. `bundle`
-3. `jekyll s -w --safe -H localhost -P 3000`
+3. `jekyll s -w --safe -H localhost -P 3000 --drafts --future`
