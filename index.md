@@ -35,9 +35,6 @@ img: "/assets/images/photography/boulevard.png"
 #published: false
 ---
 
-{%- comment -%} Please delete below and place your page content here {%- endcomment -%}
+Hello world! Welcome to my personal website.
 
-{% include util/embed-audio.html src="/assets/audio/powerline.opus" %}
-{{ website_info_text_first }}
-
-{{ website_info_text_second }}
+Looking to get in touch? See the sidebar or [About page](about) for various contact options.

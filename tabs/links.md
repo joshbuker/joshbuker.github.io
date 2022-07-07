@@ -41,53 +41,48 @@ permalink: "/links/"
 page_data:
   main:
     header: "Links"
-    info: "Your Links page description."
+    info: "Various things that I find interesting or worth sharing."
 
   # To change order of the Categories, simply change order. (you don't need to change list order.)
   category:
-    - title: "JekyII / Liquid"
-      type: id_jekyiiliquid
-      color: "gray"
-    - title: "Web Design"
-      type: id_webdesign
-      color: "#F4A273"
-    - title: "Programming"
-      type: id_programming
-      color: "#62b462"
+    - title: "Frameworks"
+      type: frameworks
+      color: "#8da9ef"
+    - title: "Japanese"
+      type: japanese
+      color: "#f93437"
 
   list:
     -
-    # programming
-    - type: id_programming
-      title: "Stack OverFlow"
-      url: "https://stackoverflow.com/"
-      info: "Stack Overflow is a question and answer website for professional and enthusiastic programmers."
+    # frameworks
+    - type: frameworks
+      title: "Quasar"
+      url: "https://quasar.dev/"
+      info: "Quasar is a VueJS based, write-once-compile-everywhere development framework for creating modern web applications. It supports compiling to mobile and desktop environments."
+    - type: frameworks
+      title: "Ruby on Rails"
+      url: "https://rubyonrails.org/"
+      info: "A Ruby framework for developing modern web applications."
 
-    # jekyiiliquid
-    - type: id_jekyiiliquid
-      title: "Jekyll"
-      url: "https://jekyllrb.com/"
-      info: "Transform your plain text into static websites and blogs."
-    - type: id_jekyiiliquid
-      title: "Jekyll Cheat Sheet"
-      url: "https://cloudcannon.com/community/jekyll-cheat-sheet/"
-      info: "There are so many Jekyll variables and filters to remember and it can be tricky to keep it all in your head. This cheat sheet serves as a quick reference of everything Jekyll can do."
-    - type: id_jekyiiliquid
-      title: "Liquid for Designers"
-      url: "https://github.com/Shopify/liquid/wiki/Liquid-for-Designers"
-      info: "Liquid for Designers wiki on GitHub"
-    - type: id_jekyiiliquid
-      title: "Liquid for Programmers"
-      url: "https://github.com/Shopify/liquid/wiki/Liquid-for-Programmers"
-      info: "Liquid for Programmers wiki on GitHub"
-    - type: id_jekyiiliquid
-      title: "Liquid Reference"
-      url: "https://shopify.dev/api/liquid/"
-      info: "Liquid is a template language created by Shopify and written in Ruby. It is now available as an open source project on GitHub"
-
-    # webdesign
-    - type: id_webdesign
-      title: "W3Schools"
-      url: "https://www.w3schools.com/"
-      info: "W3Schools offers free online tutorials, references and exercises in all the major languages of the web. Covering popular subjects like HTML, CSS, JavaScript, Python, SQL, Java, and many more."
+    # Japanese
+    - type: japanese
+      title: "Learn Japanese"
+      url: "https://www.tofugu.com/learn-japanese/"
+      info: "A pretty thorough guide for adult native English speakers to learn Japanese."
+    - type: japanese
+      title: "Learn Hiragana"
+      url: "https://www.tofugu.com/japanese/learn-hiragana/"
+      info: "Hiragana is essentially the Japanese alphabet, and one of the first things you should learn when picking up Japanese."
+    - type: japanese
+      title: "Learn Katakana"
+      url: "https://www.tofugu.com/japanese/learn-katakana/"
+      info: "Katakana is fairly 1:1 with Hiragana, but is primarily used for transcribing foreign words, and for writing foreign loan words such as ホテル (Hotel)."
+    - type: japanese
+      title: "Jisho"
+      url: "https://jisho.org/"
+      info: "One of the most powerful, and useful, English-Japanese dictionaries out there. Absolutely indispensable while learning Japanese."
+    - type: japanese
+      title: "WaniKani"
+      url: "https://www.wanikani.com/"
+      info: "An online tool for learning Kanji via a spaced-repetition system. Essentially flashcards with some extra magic to help take advantage of memory formation quirks."
 ---

@@ -5,21 +5,21 @@
 brand: "Josh Buker"
 
 # text below the brand name
-brand_sub_text: "$site_sample"
+# brand_sub_text: "$site_sample"
 
 # used for seo meta post author (if it's not defined in post)
 name: "Josh Buker"
 
 # home page top header texts
-home:
+# home:
   # you can also use $site_brand, $site_greetings, $site_welcome in line1 and line2 for replacing texts.
-  top_header_line1: "$site_welcome"
+  # top_header_line1: "$site_welcome"
   # if commented, top header will be a single line
-  top_header_line2: "$site_brand"
+  # top_header_line2: "$site_brand"
 
 # about page sub title
 about:
-  sub_title: "$site_sample"
+  sub_title: "About me"
 
 # if you don't want to add copyright year, comment or leave it blank.
 # the year during which the claimed copyright for the work was first asserted.
@@ -42,7 +42,7 @@ creative_commons:
 # seo meta this is needed for each language
 # If meta_description is not defined in front matter, it's created from (post / page) content,
 # if it has no content, this will be used for page description. It is also used in manifest.json
-meta_common_description: "Your meta description."
+meta_common_description: "Josh Buker's personal website."
 
 # contact options (side nav bottom and about page)
 # the order of the items will be shown as here.
