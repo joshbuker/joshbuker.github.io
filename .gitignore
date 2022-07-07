@@ -5,6 +5,7 @@
 !.editorconfig
 !.ruby-gemset
 !.ruby-version
+!.keep
 
 # jekyll Cache
 _site
