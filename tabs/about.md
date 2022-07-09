@@ -19,4 +19,4 @@ permalink: "/about/"
 
 # `whoami`
 
-Hi there! My name is Josh Buker (BE-YU-ker). Historically I'd consider myself a software engineer, while long term my trajectory involves robotics and a more holistic engineering perspective. Currently I'm doing a tour of duty in the cybersecurity industry, bringing my previous developer experience and combining it with the world's current security needs.
+Hi there! My name is Josh Buker (BEE-YU-ker). Historically I'd consider myself a software engineer, while long term my trajectory involves robotics and a more holistic engineering perspective. Currently I'm doing a tour of duty in the cybersecurity industry, bringing my previous developer experience and combining it with the world's current security needs.
