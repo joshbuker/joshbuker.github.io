@@ -12,7 +12,7 @@ permalink: "/projects/"
 #title: My title
 #button_name: "My button"
 # for override side_and_top_nav_buttons in _data/conf/main.yml
-#icon: "fa fa-bath"
+icon: "fa fa-rocket"
 
 # seo
 # if not specified, date will be used.
