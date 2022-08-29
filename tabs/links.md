@@ -51,6 +51,9 @@ page_data:
     - title: "Japanese"
       type: japanese
       color: "#f93437"
+    - title: "Books"
+      type: books
+      color: "#c4adf7"
 
   list:
     -
@@ -85,4 +88,18 @@ page_data:
       title: "WaniKani"
       url: "https://www.wanikani.com/"
       info: "An online tool for learning Kanji via a spaced-repetition system. Essentially flashcards with some extra magic to help take advantage of memory formation quirks."
+
+    # Books
+    - type: books
+      title: "Getting Things Done, David Allen"
+      url: "https://smile.amazon.com/dp/B00KWG9M2E/"
+      info: "A productivity book on how to stay sane in a modern world and all its new distractions. Origin of the 'GTD' methodology."
+    - type: books
+      title: "The Life-Changing Magic of Tidying Up, Marie Kondō"
+      url: "https://smile.amazon.com/dp/B00KK0PICK/"
+      info: "A book on how to declutter your home and life, to great effect. Commonly referred to as the 'KonMari method'."
+    - type: books
+      title: "1984, George Orwell"
+      url: "https://smile.amazon.com/dp/B003JTHWKU/"
+      info: "A hauntingly accurate view of the dangers stemming from the control and flow of information, ideas, and language. World famous, and an absolute must read."
 ---
