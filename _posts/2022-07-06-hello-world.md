@@ -28,11 +28,15 @@ date: 2022-07-06 18:48:00 -0700
 
 # Hello World!
 
+<!-- outline-start -->
+
 Welcome to my first blog post.
 
 As the first post, I feel like this should have some amazing content that folks will look back on and say, "yeah, it was clear from the beginning this would be great." Unfortunately, reality is not so ideal, and instead you get whatever this will end up being.
 
 Perhaps through some stroke of luck, however, this will be engaging enough to be worth your time. Even if it isn't the next [SmarterEveryDay](https://www.smartereveryday.com/) or [~~Joey B Rocket Reviews~~ BPS Space](https://www.youtube.com/channel/UCILl8ozWuxnFYXIe2svjHhg).
+
+<!-- outline-end -->
 
 ## What even is this?
 
