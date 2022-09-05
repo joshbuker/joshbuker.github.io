@@ -27,15 +27,14 @@ defaults:
       path: "_posts"
     values:
       layout: "post"
-      permalink: "/blog/:year/:month/:day/:slug/"
+      permalink: "/blog/:slug/"
 
   # for drafts
   - scope:
-      # to separate language posts folders
       path: "_drafts"
     values:
       layout: "post"
-      permalink: "/blog/:year/:month/:day/:slug/"
+      permalink: "/blog/:slug/"
 
   # for multilingual posts
   # - scope:
