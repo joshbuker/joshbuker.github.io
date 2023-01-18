@@ -1,5 +1,5 @@
 {%-comment-%}
-  Mr. Green Jekyll Theme - v1.1.0 (https://github.com/MrGreensWorkshop/MrGreen-JekyllTheme)
+  Mr. Green Jekyll Theme (https://github.com/MrGreensWorkshop/MrGreen-JekyllTheme)
   Copyright (c) 2022 Mr. Green's Workshop https://www.MrGreensWorkshop.com
   Licensed under MIT
 {%-endcomment-%}
@@ -184,8 +184,19 @@
 {% endif -%}
 
 {% if site.data.lang.size > 1 and site.data.conf.main.language_switch_lang_list.size > 1 and site.data.conf.main.language_translation_offer_box -%}
-  {%- include default/sliding-msg-box.html -%}
+  {%- assign language_translation_offer_box = true -%}
   {%- include multi_lng/lang-offer-msg-box.html -%}
+{% endif -%}
+
+{% if site.data.conf.main.contact_form.enable and page.layout == 'about' -%}
+  {%- include default/google-contact-form-iframe.html -%}
+{% endif -%}
+
+{% if site.data.conf.main.cookie_consent.enable
+  or language_translation_offer_box
+  or site.data.conf.main.contact_form.enable
+-%}
+  {%- include default/sliding-msg-box.html -%}
 {% endif -%}
 
 {%- comment -%} iOS Safari Web App fix for open links inside app. (prevent opening in safari) {%- endcomment -%}
