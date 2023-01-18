@@ -40,5 +40,3 @@ img: "/assets/images/photography/boulevard.png"
 Hello world! Welcome to my personal website.
 
 Looking to get in touch? See the sidebar or [About page](about) for various contact options.
-
-<a href="https://defcon.social/@joshbuker" rel="me"></a>
