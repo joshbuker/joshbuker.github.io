@@ -37,11 +37,11 @@ You'll need a few things before you get started:
 
 ### Creating a GitHub Account
 
-Creating a GitHub account is simple and free, do so at: https://github.com/signup
+Creating a GitHub account is simple and free, do so at: [github.com/signup](https://github.com/signup)
 
 ### Creating a Cloudflare Account
 
-Creating a Cloudflare account is also free, sign up at: https://dash.cloudflare.com/sign-up
+Creating a Cloudflare account is also free, sign up at: [dash.cloudflare.com/sign-up](https://dash.cloudflare.com/sign-up)
 
 ### Buying a Domain Name
 
@@ -61,7 +61,7 @@ Now that you have a domain name, and an account on GitHub and Cloudflare, it's t
 
 ### Creating a Git repository
 
-You can use my premade template here: https://github.com/joshbuker/photography-template/generate
+You can use my premade template here: [github.com/joshbuker/photography-template/generate](https://github.com/joshbuker/photography-template/generate)
 
 For more guidance on how to use Git, I'll be creating another blog post in the future specifically covering the topic.
 
