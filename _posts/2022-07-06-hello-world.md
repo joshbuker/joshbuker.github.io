@@ -51,8 +51,8 @@ First, was thinking about...
 **What do I want to support:**
 - An easy way to publish short essays and such from my notes, ideally with minimal duplication of content.
 - Links to my socials and other websites.
-	- [GitHub](https://github.com/joshbuker) and [LinkedIn](https://linkedin.com/in/josh-buker)
-	- [Photography](https://cliche.photos)
+	- [GitHub](https://github.com/joshbuker) and [LinkedIn](https://linkedin.com/in/joshbuker)
+	- [Photography](https://photography.joshbuker.com)
 	- Projects hosted elsewhere, e.g. [RoboRuckus](https://roboruckus.com)[^roboruckus] and [TDL App](https://tdl.app)
 - Visually appealing[^design]
 - An about me page
