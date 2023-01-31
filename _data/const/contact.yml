@@ -23,7 +23,7 @@ twitter:
 mastodon:
 # The mastodon svg file was obtained from this link: https://github.com/mastodon/joinmastodon/blob/master/public/logos/logo-black.svg
   icon: "/assets/images/default/mastodon.svg"
-  url: "https://defcon.social"
+  url: "https://infosec.exchange"
 instagram:
   icon: "fa fa-instagram"
   url: "https://www.instagram.com"
