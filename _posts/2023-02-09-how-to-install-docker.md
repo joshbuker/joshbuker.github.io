@@ -24,7 +24,7 @@ I'll be going over what works for the operating systems I'm most familiar with, 
 
 Installing on Ubuntu is fairly straight-forward, as the installation script works out of the box:
 
-https://get.docker.com
+[https://get.docker.com](https://get.docker.com)
 
 To use this script, here are a few commands that should work in most cases:
 
@@ -42,8 +42,9 @@ What this does is save the script to a file in your /tmp folder (which will be a
 Unfortunately the process is not quite as straight forward with Pop OS!, despite being based on Debian/Ubuntu.
 
 I used the following examples to get this working:
-https://devimalplanet.com/how-to-install-docker-on-linux-pop-os
-https://www.youtube.com/watch?v=LrUDOVbI0N8
+
+- [https://devimalplanet.com/how-to-install-docker-on-linux-pop-os](https://devimalplanet.com/how-to-install-docker-on-linux-pop-os)
+- [https://www.youtube.com/watch?v=LrUDOVbI0N8](https://www.youtube.com/watch?v=LrUDOVbI0N8)
 
 First, there are some dependencies we'll need to install:
 
