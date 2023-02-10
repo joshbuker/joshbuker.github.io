@@ -18,7 +18,7 @@ Before you create a Docker Swarm, you'll want to [install Docker](https://joshbu
 
 <!-- outline-end -->
 
-Official Docker documentation: https://docs.docker.com/engine/swarm/swarm-tutorial/create-swarm/
+Official Docker documentation: [https://docs.docker.com/engine/swarm/swarm-tutorial/create-swarm/](https://docs.docker.com/engine/swarm/swarm-tutorial/create-swarm/)
 
 ## Set Static IPs for all nodes
 
@@ -26,7 +26,7 @@ You'll want to assign a static IP for all of your manager and worker nodes, so t
 
 For pfSense, you can do this by:
 
-1. Going to [Status -> DHCP Leases](https://192.168.7.1/status_dhcp_leases.php)
+1. Going to Status -> DHCP Leases
 2. Find the lease for the machine you want set static
 3. Click the + button for setting static IP
 
