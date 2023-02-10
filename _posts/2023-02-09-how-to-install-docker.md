@@ -96,4 +96,4 @@ The first command downloads a hello-world example from Docker Hub, while the sec
 
 With Docker installed, you can now setup multiple machines in a Docker swarm, allowing for dynamic load balancing and some more advanced setups.
 
-I'll be writing a guide on how to initiate a Docker Swarm in the near future.
+See: [How to create a Docker Swarm](https://joshbuker.com/blog/how-to-create-a-docker-swarm)
