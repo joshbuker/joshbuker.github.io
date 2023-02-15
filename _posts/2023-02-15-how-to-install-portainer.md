@@ -22,8 +22,8 @@ Portainer particularly shines when managing a Docker Swarm.
 
 First, [Create a Docker Swarm](https://joshbuker.com/blog/how-to-create-a-docker-swarm/).
 
-https://docs.portainer.io/start/install/server/swarm/linux
-https://stackoverflow.com/a/64234716
+- [https://docs.portainer.io/start/install/server/swarm/linux](https://docs.portainer.io/start/install/server/swarm/linux)
+- [https://stackoverflow.com/a/64234716](https://stackoverflow.com/a/64234716)
 
 ## Install and deploy Community Edition
 
