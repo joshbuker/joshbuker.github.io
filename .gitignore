@@ -6,6 +6,7 @@
 !.ruby-gemset
 !.ruby-version
 !.keep
+!.devcontainer
 
 # jekyll Cache
 _site
