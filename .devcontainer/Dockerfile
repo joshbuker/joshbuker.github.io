@@ -4,6 +4,7 @@ FROM mcr.microsoft.com/devcontainers/ruby:${VARIANT}
 
 # Install Rails
 RUN gem install rails webdrivers
+RUN gem install bundler
 
 # Default value to allow debug server to serve content over GitHub Codespace's port forwarding service
 # The value is a comma-separated list of allowed domains
@@ -22,6 +23,3 @@ RUN su vscode -c "source /usr/local/share/nvm/nvm.sh && nvm install ${NODE_VERSI
 
 # [Optional] Uncomment this line to install global node packages.
 # RUN su vscode -c "source /usr/local/share/nvm/nvm.sh && npm install -g <your-package-here>" 2>&1
-
-# FIXME: This is a dirty hack
-RUN chmod -R 777 /usr/local/rvm/gems

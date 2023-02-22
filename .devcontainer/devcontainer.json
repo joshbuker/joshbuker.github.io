@@ -19,7 +19,7 @@
 	"forwardPorts": [3000],
 
 	// Use 'postCreateCommand' to run commands after the container is created.
-	"postCreateCommand": "bundle && jekyll s -w --safe -H localhost -P 3000 --drafts --future",
+	"postCreateCommand": "bash /workspaces/${localWorkspaceFolderBasename}/.devcontainer/postcreate.sh ${localWorkspaceFolderBasename}",
 
 	// Set `remoteUser` to `root` to connect as root instead. More info: https://aka.ms/vscode-remote/containers/non-root.
 	"remoteUser": "vscode"
