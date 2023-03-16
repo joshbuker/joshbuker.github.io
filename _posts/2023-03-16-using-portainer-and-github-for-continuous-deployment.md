@@ -38,7 +38,7 @@ You'll want to ensure the personal access token is assigned to the relevant reso
 
 Set the Repository access to either Public Repositories if your repo is public, or Only select repositories if it's private. If you set it to Only select repositories, then the only repository permission you need to add is Contents -> Read-Only
 
-Save the token to your password manager of choice (if you don't have one, consider 1Password or BitWarden). Note that as soon as you refresh or leave the page, the token will disappear and need to be regenerated if you did not copy it.
+Save the token to your password manager of choice (if you don't have one, consider [1Password](https://1password.com/) or [BitWarden](https://bitwarden.com/)). Note that as soon as you refresh or leave the page, the token will disappear and need to be regenerated if you did not copy it.
 
 ## Create a new Portainer Stack using Repository mode
 
