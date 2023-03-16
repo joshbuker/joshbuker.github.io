@@ -14,9 +14,13 @@ date: 2023-03-16 00:14:00 -0700
 
 Portainer can be combined with a GitHub repo to allow for continuous deployment of docker swarm services, allowing all the benefits of Git to be applied to your stack files.
 
+For those unfamiliar with the terms CI/CD or continuous integration and continuous deployment, they are terms for the automation of testing code and deploying code to production respectively. In particular, usually this is combined with Git so that as code is pushed to a central branch, a test suite will be ran against your changes and if it passes, the code will automatically be released as a new version. In team environments, this testing is usually done when opening a pull request (asking to merge your changes so that others can review it first).
+
+This blog post only covers the deployment aspects that portainer provides, and doesn't cover test suites which depend more on the language/framework you're using, and what CI provider you're using to run the tests (e.g. GitHub Actions, CircleCI, etc).
+
 <!-- outline-end -->
 
-This post assumes that you have a Docker Swarm with portainer already setup, as well as a GitHub account. See my previous blog posts if you have yet to setup Portainer.
+This post assumes that you have a Docker Swarm with portainer already setup, as well as a GitHub account. If you have yet to setup Portainer, see my blog post on [How to Install Portainer](https://joshbuker.com/blog/how-to-install-portainer/).
 
 ## Create a new repository
 
@@ -50,8 +54,14 @@ Set the Repo URL to the URL of the repo you created, and the repo reference to t
 
 The compose path is the relative path of the stack file you want to use, for example: `some-folder/my-docker-compose-file.yml`
 
+![](/assets/images/posts/portainer_authentication_and_repo_settings.png)
+
 You'll want to enable automatic updates. If using polling, set it to 24h (once daily) unless you know what you're doing. You can always manually re-pull and redeploy if this polling interval is too slow for your use-case. You can also switch to webhooks if you would like to automatically push new versions immediately when committed, or after your test suite passes.
 
-Environment variables can be defined per stack, and allow for customizing/reusing stack files.
+![](/assets/images/posts/portainer_polling_updates.png)
+
+Using the webhook requires having a public IP that your service provider can reach, and some configuration on your GitHub repo. I'll cover adding a test suite via GitHub Actions, and automated webhook deployments either in a future blog post, or as an update to this blog post.
+
+Environment variables can be defined per stack, and allow for customizing/reusing stack files. For example, you can use this to set the IP and share name for NAS volumes.
 
 Deploy the Stack, and **you're done!**
