@@ -22,7 +22,7 @@ This post assumes that you have a Docker Swarm with portainer already setup, as 
 
 You'll want to create a new repo to contain your stack files. I recommend nesting each project / service in a folder. For an example of what this could look like, see my own repo at: [https://github.com/joshbuker/homelab](https://github.com/joshbuker/homelab)
 
-![](assets/images/posts/github_create_new_repo.png)
+![](/assets/images/posts/github_create_new_repo.png)
 
 ## Create a personal access token
 
@@ -30,7 +30,7 @@ You'll need a personal access token to allow portainer to access GitHub as if it
 
 You can create a new fine-grained token by going to [Settings -> Developer Settings -> Personal Access Tokens -> Fine-grained tokens (beta) -> Generate new token](https://github.com/settings/personal-access-tokens/new).
 
-![](assets/images/posts/portainer_stack_personal_access_token.png)
+![](/assets/images/posts/portainer_stack_personal_access_token.png)
 
 The token name can be whatever you want it to be, and for expiration 90 days is a reasonable compromise between convenience and risk.
 
@@ -42,7 +42,7 @@ Save the token to your password manager of choice (if you don't have one, consid
 
 ## Create a new Portainer Stack using Repository mode
 
-![](assets/images/posts/portainer_stack_repo.png)
+![](/assets/images/posts/portainer_stack_repo.png)
 
 Enable authentication and use your GitHub username and the personal access token you just generated.
 
