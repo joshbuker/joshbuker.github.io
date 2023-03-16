@@ -3,7 +3,7 @@ title: Using Portainer and GitHub for Continuous Deployment
 category: "technology"
 tags: ["guides","docker"]
 img: "/assets/images/stock/continuous_deployment.jpg"
-#date: 2023-03-16 00:14:00 -0700
+date: 2023-03-16 00:14:00 -0700
 ---
 
 ![Continuous Deployment](/assets/images/stock/continuous_deployment.jpg)
