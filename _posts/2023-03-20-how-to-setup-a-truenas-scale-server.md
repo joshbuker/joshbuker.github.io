@@ -24,8 +24,8 @@ See also, the TrueNAS Scale Official Documentation:
 
 ## Quick Notes
 
-Use LZ4 compression unless you know what you're doing
-Use NFSv4 ACLs unless you know what you're doing
+- Use LZ4 compression unless you know what you're doing
+- Use NFSv4 ACLs unless you know what you're doing
 
 ## Setup TrueNAS Scale
 
