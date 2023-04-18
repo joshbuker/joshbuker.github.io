@@ -8,8 +8,6 @@ date: 2023-02-10 09:40:00 -0700
 
 ![Container Ship Swarm](/assets/images/stock/container_ship_swarm.jpg)
 
-# How to create a Docker Swarm
-
 <!-- outline-start -->
 
 Docker Swarm is an easy way to turn a pile of old computers at home into a home lab environment. It can automatically load balance the various services you spin up, and you can use free tools like Portainer to help manage your swarm.

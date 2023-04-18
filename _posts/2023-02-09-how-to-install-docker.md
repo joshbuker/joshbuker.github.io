@@ -8,8 +8,6 @@ date: 2023-02-09 21:20:00 -0700
 
 ![Container Ship](/assets/images/stock/container_ship.jpg)
 
-# How to install Docker
-
 <!-- outline-start -->
 
 If you're unfamiliar, Docker is an incredible tool that allows for quickly spinning up sandboxes to run virtualized servers and networked applications. It provides an incredibly fast and lightweight alternative to virtual machines, at the cost of less separation between the virtual environment and the host system.

@@ -6,9 +6,7 @@ img: "/assets/images/stock/popcorn.jpg"
 date: 2023-04-18 15:00:00 -0700
 ---
 
-![](/assets/images/stock/popcorn.jpg)
-
-# Running Plex with Docker and NFS
+![Popcorn](/assets/images/stock/popcorn.jpg)
 
 <!-- outline start -->
 

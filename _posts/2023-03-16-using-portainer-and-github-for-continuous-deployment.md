@@ -8,8 +8,6 @@ date: 2023-03-16 00:14:00 -0700
 
 ![Continuous Deployment](/assets/images/stock/continuous_deployment.jpg)
 
-# Using Portainer and GitHub for Continuous Deployment
-
 <!-- outline-start -->
 
 Portainer can be combined with a GitHub repo to allow for continuous deployment of docker swarm services, allowing all the benefits of Git to be applied to your stack files.

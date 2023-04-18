@@ -8,8 +8,6 @@ date: 2023-03-16 00:35:00 -0700
 
 ![Code](/assets/images/stock/code.jpg)
 
-# How to Dev Containerify a Project
-
 <!-- outline-start -->
 
 Quick and dirty guide for adding `.devcontainer` support to a new project. See also [joshbuker/dev-containers](https://github.com/joshbuker/dev-containers) for example configurations.

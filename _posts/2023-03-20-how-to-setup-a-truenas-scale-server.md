@@ -6,9 +6,7 @@ img: "/assets/images/stock/blue_data_center.jpg"
 date: 2023-03-20 22:15:00 -0700
 ---
 
-![](/assets/images/stock/blue_data_center.jpg)
-
-# How to Setup a TrueNAS Scale Server
+![Blue Data Center](/assets/images/stock/blue_data_center.jpg)
 
 <!-- outline-start -->
 

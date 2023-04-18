@@ -8,8 +8,6 @@ date: 2023-01-25 19:45:00 -0700
 
 ![Cloud Lightbulbs](/assets/images/stock/cloud_lightbulbs.jpg)
 
-# Free Photography Hosting with Cloudflare Pages
-
 <!-- outline-start -->
 
 As a photographer, I've been contemplating various methods of posting my photos online. There's some social media options such as PixelFed or Instagram, but I've done a relatively good job avoiding social media, and there are other issues such as loss of copyright when posting to such platforms.
