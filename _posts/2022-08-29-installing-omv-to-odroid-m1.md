@@ -100,6 +100,12 @@ Now that you've installed Debian, it should show up when you boot as an option i
     - `sudo curl -sSL https://github.com/OpenMediaVault-Plugin-Developers/installScript/raw/master/install | sudo bash`
 - This process will take a while, once complete reboot the device:
     - `sudo reboot`
+    - If the reboot fails due to boot partition corruption, there is a workaround shared by [@jaboh](https://github.com/jaboh):
+      - Reinstall Debian
+      - Backup the `/boot` directory using a rescue OS
+      - Install OMV and required plugins
+      - Using the rescue OS, restore the backup of the `/boot` directory from before OMV installation
+      - Reboot
 - Done! You should now be able to find the device using your network router and login to it using the web interface.
 - For what to do next, you can check out [NetworkChuck's video on OpenMediaVault](https://youtu.be/gyMpI8csWis?t=508) (start around the 8:28 mark, after OMV installation is done).
 
