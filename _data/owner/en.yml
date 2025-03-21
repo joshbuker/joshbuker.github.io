@@ -53,7 +53,7 @@ contacts:
   - linkedin: "joshbuker"
   #- twitter: "josh_buker"
   - mastodon: "@joshbuker"
-  #- instagram: ""
+  - instagram: "joshbuker"
   #- youtube: ""
   #- facebook: ""
 # to add more, check the _data/const/contact.yml file
