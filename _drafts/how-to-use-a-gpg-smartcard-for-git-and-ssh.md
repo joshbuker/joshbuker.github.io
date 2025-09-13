@@ -7,8 +7,13 @@ tags:
   - gpg
   - git
   - ssh
+  - yubikey
+  - nitrokey
 date:
+img: /assets/images/stock/yubikey.jpg
 ---
+![YubiKey Stock Photo](/assets/images/stock/yubikey.jpg)
+
 <!--- outline start -->
 
 A guide on using a GPG compatible SmartCard such as the NitroKey or YubiKey for Git and SSH.
