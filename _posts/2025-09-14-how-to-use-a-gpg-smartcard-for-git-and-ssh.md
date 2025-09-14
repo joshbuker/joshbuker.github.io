@@ -23,7 +23,7 @@ This guide assumes that you are using a YubiKey and NixOS, but should largely be
 <!-- outline end -->
 
 > NOTE:
-> Due to current limitations, you cannot have multiple SmartCards that all work simultaneously using the same keys. You can however copy the backed up keys to a new SmartCard, and only need to change the configuration on your client device(s), not any servers. This is because GPG will look for the serial number of the SmartCard when completing operations, which will only ever point to one card at a time. At time of writing, there are no reasonable workarounds for this issue.
+> Due to current limitations, you cannot have multiple SmartCards that all work simultaneously using the same keys. You can however copy the backed up keys to a new SmartCard, and only need to change the configuration on your client device(s), not any servers. This is because GPG will look for the serial number of the SmartCard when completing operations, which will only ever point to one card at a time. Also, the stubs created will be unique for each SmartCard despite using the same underlying keys. At time of writing, there are no reasonable workarounds for this issue.
 
 ## References
 
@@ -266,7 +266,8 @@ gpg --edit-key <gpg-id>
 - `3` (authenticate key)
 - `save`
 
-Create a stubs.asc file for importing on new machines to allow usage of SmartCard on that machine:
+The gpg keys have now been automatically deleted and replaced with stubs pointing at your SmartCard. You'll want to save these stubs for importing on other computers using the following command:
+
 ```sh
 gpg -a --output stubs.asc --export-secret-keys <gpg-id>
 ```
