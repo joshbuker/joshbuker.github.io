@@ -9,7 +9,7 @@ tags:
   - ssh
   - yubikey
   - nitrokey
-date:
+date: 2025-09-14 13:50:00 -0700
 img: /assets/images/stock/yubikey.jpg
 ---
 ![YubiKey Stock Photo](/assets/images/stock/yubikey.jpg)
