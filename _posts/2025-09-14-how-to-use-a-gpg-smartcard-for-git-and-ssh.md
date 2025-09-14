@@ -142,7 +142,7 @@ Use the following settings:
 - `O` - Okay, continue
 - Paste gpg passphrase when prompted
 
-This will output the results, and give you a long string after pub that is the ID of your gpg key. Copy that key for use in the following command. If you cleared the terminal before seeing it, you can also find the key id at any time by running `gpg -k`.
+This will output the results, and give you a long string after "pub" that is the ID of your gpg key. Copy that gpg id for use in the following command. If you cleared the terminal before seeing it, you can also find the gpg key id at any time by running `gpg -k`.
 
 Now edit the key you just generated, and add information for ssh and git commits:
 ```sh
