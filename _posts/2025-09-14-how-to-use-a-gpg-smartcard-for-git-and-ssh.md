@@ -27,10 +27,10 @@ This guide assumes that you are using a YubiKey and NixOS, but should largely be
 
 ## References
 
-- https://www.erraticbits.ca/post/2015/gpg-smartcard/
-- https://opensource.com/article/19/4/gpg-subkeys-ssh
-- https://gist.github.com/mcattarinussi/834fc4b641ff4572018d0c665e5a94d3
-- https://gist.github.com/ageis/5b095b50b9ae6b0aa9bf
+- [Using GPG with Smart Cards - Erraticbits](https://www.erraticbits.ca/post/2015/gpg-smartcard)
+- [Quick GPG Smartcard Guide - Ageis (GitHub Gist)](https://gist.github.com/ageis/5b095b50b9ae6b0aa9bf)
+- [How to enable SSH access using a GPG key for authentication - Red Hat](https://opensource.com/article/19/4/gpg-subkeys-ssh)
+- [GPG - SSH setup - Mattia Cattarinussi (GitHub Gist)](https://gist.github.com/mcattarinussi/834fc4b641ff4572018d0c665e5a94d3)
 
 ## Requirements
 
