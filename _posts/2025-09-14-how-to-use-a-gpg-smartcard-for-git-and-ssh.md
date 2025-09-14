@@ -48,7 +48,7 @@ Select a computer that you would like to use for generating the secret keys and 
 
 On that computer, you will need to install GnuPG and enable SmartCard support.
 
-### Debian-based
+#### Debian-based
 
 Install the GPG smartcard daemon and enable SSH support for GPG.
 
@@ -66,7 +66,7 @@ gpgconf --launch gpg-agent
 
 You may need to log out and back in to refresh your gpg-agent session.
 
-### NixOS
+#### NixOS
 
 Within your Nix Configuration, add the following:
 ```nix
@@ -105,7 +105,7 @@ The first half is where the file will be symlinked to within your home folder, w
 
 Rebuild your system to use the new config.
 
-## Generating the GPG keys
+### Generating the GPG keys
 
 Create a temp folder to work from and cd into it:
 
@@ -214,7 +214,7 @@ gpg -a --export-secret-subkeys <gpg-id> >> ./subkeys.key
 > NOTE:
 > The secret keys **will be deleted from your machine** when porting them over to the SmartCard. If you want to keep a backup to allow switching to a new SmartCard in the future, it is critical to do this backup before proceeding.
 
-## Configuring the SmartCard
+### Configuring the SmartCard
 
 Plug in your SmartCard now.
 
@@ -271,7 +271,7 @@ Create a stubs.asc file for importing on new machines to allow usage of SmartCar
 gpg -a --output stubs.asc --export-secret-keys <gpg-id>
 ```
 
-## Configure SSH to use your SmartCard
+### Configure SSH to use your SmartCard
 
 Grab the keygrip for your authenticate subkey using:
 ```sh
@@ -292,7 +292,7 @@ ssh-rsa <long string here> (none)
 
 Save this in your password manager, it will be used when adding your public key to ssh servers.
 
-## Configure Git to use your SmartCard
+### Configure Git to use your SmartCard
 
 Grab the long format ID for your sign only subkey:
 
@@ -317,7 +317,7 @@ Grab your gpg public key for uploading to GitHub or other Git servers:
 gpg -a --export <gpg-id> > smartcard.pub
 ```
 
-## Backup GPG files
+### Backup GPG files
 
 Plug in your backup USB drive, then open a terminal within your backup USB drive and run:
 
@@ -330,7 +330,7 @@ cp ~/temp/* ./
 > NOTE:
 > Do NOT use `mv` to move the files. It is more secure to copy, then shred the original in the following step.
 
-## Cleanup
+### Cleanup
 
 ```sh
 cd ~/temp
@@ -341,7 +341,7 @@ rm -r ~/temp
 
 If you used a live boot USB for following this guide, it would now be wise to securely erase the drive to remove the possibility of recovering the secret keys from a cache that may have been missed.
 
-## Adding to GitHub
+### Adding to GitHub
 
 Use the SSH public key and GPG public key, and add them to your GitHub account.
 
@@ -368,7 +368,7 @@ git log --show-signature
 Which should show some lines mentioning gpg and a good signature from your gpg key.
 
 If so, congratulations, you should be good to go!
-## Setting up a new computer
+### Setting up a new computer
 
 Follow the same install process at the beginning of the guide on the new computer, and then import the SmartCard stubs with:
 
