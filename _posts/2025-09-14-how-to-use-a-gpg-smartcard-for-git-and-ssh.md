@@ -131,15 +131,15 @@ gpg --full-generate-key
 ```
 
 Use the following settings:
-- 4 - RSA (sign only)
-- Keysize - 4096
-- Expires - 0 (never)
-- Y (confirm key expiration)
+- `4` - RSA (sign only)
+- Keysize - `4096`
+- Expires - `0` (never)
+- `Y` (confirm key expiration)
 - Name - Your Name
 - Email - gpg@example.com
 - Comment (leave blank)
 - Ensure you have your desired gpg passphrase copied to your keyboard
-- O - Okay, continue
+- `O` - Okay, continue
 - Paste gpg passphrase when prompted
 
 This will output the results, and give you a long string after pub that is the ID of your gpg key. Copy that key for use in the following command. If you cleared the terminal before seeing it, you can also find the key id at any time by running `gpg -k`.
@@ -150,15 +150,15 @@ gpg --edit-key <gpg-id>
 ```
 
 Optionally, use the following commands if you have emails specific to SSH and Git Commits that differ from your gpg email:
-- adduid - SSH Identity
+- `adduid` - SSH Identity
 	- Your Name
 	- Email - ssh@example.com
-- adduid - Git Commit Identity
+- `adduid` - Git Commit Identity
 	- Your Name
 	- Email - git-commit@example.com
-- uid 1 - Select first UID (GPG identity when you created the main key)
-- primary - Set the selected UID (1) as primary
-- save
+- `uid 1` - Select first UID (GPG identity when you created the main key)
+- `primary` - Set the selected UID (1) as primary
+- `save`
 
 Now generate the subkeys:
 ```sh
@@ -166,32 +166,32 @@ gpg --expert --edit-key <gpg-id>
 ```
 
 - Copy your gpg passphrase again, it'll prompt you for it when adding subkeys
-- addkey - Sign Only (e.g. sending and receiving encrypted email)
-	- 4 - RSA (sign only)
-	- Keysize - 4096
-	- Expires - 0 (never)
-	- Y (confirm key expiration)
-	- Y (really create)
+- `addkey` - Sign Only (e.g. sending and receiving encrypted email)
+	- `4` - RSA (sign only)
+	- Keysize - `4096`
+	- Expires - `0` (never)
+	- `Y` (confirm key expiration)
+	- `Y` (really create)
 	- Paste gpg passphrase when prompted
-- addkey - Encrypt Only (e.g. gpg git commit signing)
-	- 6 - RSA (encrypt only)
-	- Keysize - 4096
-	- Expires - 0 (never)
-	- Y (confirm key expiration)
-	- Y (really create)
+- `addkey` - Encrypt Only (e.g. gpg git commit signing)
+	- `6` - RSA (encrypt only)
+	- Keysize - `4096`
+	- Expires - `0` (never)
+	- `Y` (confirm key expiration)
+	- `Y` (really create)
 	- Paste gpg passphrase when prompted
-- addkey - Authenticate Only (e.g. SSH)
-	- 8 - RSA (custom)
-	- S - Disable Signing
-	- E - Disable Encrypt
-	- A - Enable Authenticate
-	- Q - Save
-	- Keysize - 4096
-	- Expires - 0 (never)
-	- y (confirm key expiration)
-	- y (really create)
+- `addkey` - Authenticate Only (e.g. SSH)
+	- `8` - RSA (custom)
+	- `S` - Disable Signing
+	- `E` - Disable Encrypt
+	- `A` - Enable Authenticate
+	- `Q` - Save
+	- Keysize - `4096`
+	- Expires - `0` (never)
+	- `y` (confirm key expiration)
+	- `y` (really create)
 	- Paste gpg passphrase when prompted
-- save
+- `save`
 
 Generate a revocation certificate in case you lose the smartcard and need to mark your keys as compromised:
 ```sh
@@ -199,10 +199,10 @@ gpg --gen-revoke <gpg-id> >> ./revoke.asc
 ```
 
 - Copy your gpg passphrase again
-- y - Yes create a revocation certificate
-- 1 - Reason: Key has been compromised
+- `y` - Yes create a revocation certificate
+- `1` - Reason: Key has been compromised
 - Optional description - leave blank (just hit enter again)
-- y - Yes this is okay, generate
+- `y` - Yes this is okay, generate
 - Paste gpg passphrase when prompted
 
 Also, create a backup of the original secret keys:
