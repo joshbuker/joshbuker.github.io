@@ -69,6 +69,7 @@ You may need to log out and back in to refresh your gpg-agent session.
 #### NixOS
 
 Within your Nix Configuration, add the following:
+
 ```nix
 {
   # Install GnuPG with SSH Support
@@ -90,6 +91,7 @@ gpgconf --launch gpg-agent
 ```
 
 Use home manager to source the `.bashrc` file (once you're done following the rest of the setup, you'll also want to add/uncomment .gitconfig and sshcontrol):
+
 ```nix
 {
 
@@ -117,6 +119,7 @@ cd ~/temp
 Generate a passphrase using your Password Manager, and copy it to the clipboard. You'll need it when generating the main key. You will need this beyond initial setup, so ensure it is saved in your password manager. You may also want to save some time and create a User PIN, Admin PIN, and Unlock PIN. Despite being called PINs, these can contain any characters not just numbers. The User PIN is what you'll use on a daily basis when making SSH connections or signing git commits. The other three passwords will be used infrequently.
 
 In other words, create a single "SmartCard" entry in your password manager with four passwords:
+
 - GPG Passphrase - Used when importing stubs on new machines
 - User PIN - Used on a daily basis for SSH and Git Commits
 - Admin PIN - Used when changing SmartCard settings
@@ -126,11 +129,13 @@ In other words, create a single "SmartCard" entry in your password manager with 
 > There are some concerns around ECC cryptography potentially having NSA backdoors and being susceptible to future quantum computer attacks. This guide recommends the use of RSA 4096 keys, but check for the currently recommended best practices on GPG keys as they may have changed since time of writing.
 
 Generate the main key (used for signing the subkeys):
+
 ```sh
 gpg --full-generate-key
 ```
 
 Use the following settings:
+
 - `4` - RSA (sign only)
 - Keysize - `4096`
 - Expires - `0` (never)
@@ -145,11 +150,13 @@ Use the following settings:
 This will output the results, and give you a long string after "pub" that is the ID of your gpg key. Copy that gpg id for use in the following command. If you cleared the terminal before seeing it, you can also find the gpg key id at any time by running `gpg -k`.
 
 Now edit the key you just generated, and add information for ssh and git commits:
+
 ```sh
 gpg --edit-key <gpg-id>
 ```
 
 Optionally, use the following commands if you have emails specific to SSH and Git Commits that differ from your gpg email:
+
 - `adduid` - SSH Identity
 	- Your Name
 	- Email - ssh@example.com
@@ -161,6 +168,7 @@ Optionally, use the following commands if you have emails specific to SSH and Gi
 - `save`
 
 Now generate the subkeys:
+
 ```sh
 gpg --expert --edit-key <gpg-id>
 ```
@@ -194,6 +202,7 @@ gpg --expert --edit-key <gpg-id>
 - `save`
 
 Generate a revocation certificate in case you lose the smartcard and need to mark your keys as compromised:
+
 ```sh
 gpg --gen-revoke <gpg-id> >> ./revoke.asc
 ```
@@ -206,6 +215,7 @@ gpg --gen-revoke <gpg-id> >> ./revoke.asc
 - Paste gpg passphrase when prompted
 
 Also, create a backup of the original secret keys:
+
 ```sh
 gpg -a --export-secret-key <gpg-id> >> ./main.key
 gpg -a --export-secret-subkeys <gpg-id> >> ./subkeys.key
@@ -219,6 +229,7 @@ gpg -a --export-secret-subkeys <gpg-id> >> ./subkeys.key
 Plug in your SmartCard now.
 
 Edit the SmartCard configuration using:
+
 ```sh
 gpg --card-edit
 ```
@@ -227,6 +238,7 @@ gpg --card-edit
 > Because you don't have the opportunity to copy the new unlock pin after it asks you for the admin pin, I recommend changing the unlock pin before changing the admin pin to avoid needing another device to look at the passwords you generated and typing it manually.
 
 Use the following commands:
+
 - `admin`
 - `passwd`
 - `1` - change PIN (user pin)
@@ -248,6 +260,7 @@ Use the following commands:
 - `quit`
 
 Now copy the gpg keys from your computer to the SmartCard (this will delete the secret keys from your computer, see above note on backups):
+
 ```sh
 gpg --edit-key <gpg-id>
 ```
@@ -275,6 +288,7 @@ gpg -a --output stubs.asc --export-secret-keys <gpg-id>
 ### Configure SSH to use your SmartCard
 
 Grab the keygrip for your authenticate subkey using:
+
 ```sh
 gpg --with-keygrip -K
 ```
@@ -282,11 +296,13 @@ gpg --with-keygrip -K
 Save it as `~/.gnupg/sshcontrol` (or within your NixOS config as `sshcontrol` and uncomment the relevant home manager line)
 
 Grab your ssh public key via:
+
 ```sh
 ssh-add -L
 ```
 
 It should look like:
+
 ```
 ssh-rsa <long string here> (none)
 ```
