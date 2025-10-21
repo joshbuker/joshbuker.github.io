@@ -243,7 +243,7 @@ contact_form:
 #                Copyright text
 ###########################################################
 # this will add current year to the end of copyright_start_year which is defined in _data/owner/[language].yml
-copyright_add_end_year: false
+copyright_add_end_year: true
 
 # this uses copyright.additional_text defined in _data/lang/[language].yml
 # not recommended if creative_commons is enabled.
