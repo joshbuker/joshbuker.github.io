@@ -2,7 +2,7 @@
 layout: archives
 # multilingual page pair id, this must pair with translations of this page. (This name must be unique)
 lng_pair: id_archives
-permalink: "/archive/"
+permalink: "/timeline/"
 
 # publish date (used for seo)
 # if not specified, site.time will be used.
