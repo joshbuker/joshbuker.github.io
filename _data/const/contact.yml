@@ -9,26 +9,26 @@
 # keys need to match with accounts in _data/owner/[language].yml file
 
 github:
-  icon: "fa fa-github"
+  icon: "fa-brands fa-github"
   url: "https://github.com"
 email:
-  icon: "fa fa-envelope-o"
+  icon: "fa-solid fa-envelope"
   url: ""
 linkedin:
-  icon: "fa fa-linkedin"
+  icon: "fa-brands fa-square-linkedin"
   url: "https://www.linkedin.com/in"
 twitter:
-  icon: "fa fa-twitter"
+  icon: "fa-brands fa-twitter"
   url: "https://twitter.com"
 mastodon:
 # The mastodon svg file was obtained from this link: https://github.com/mastodon/joinmastodon/blob/master/public/logos/logo-black.svg
   icon: "/assets/images/default/mastodon.svg"
   url: "https://infosec.exchange"
 instagram:
-  icon: "fa fa-instagram"
+  icon: "fa-brands fa-instagram"
   url: "https://www.instagram.com"
 youtube:
-  icon: "fa fa-youtube-play"
+  icon: "fa-brands fa-youtube"
   url: "https://www.youtube.com/channel"
 facebook:
   icon: "fa fa-facebook"
