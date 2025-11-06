@@ -103,6 +103,7 @@ post:
     link_copied: Link copied!
     tooltip:
       # keys need to match with _data/share.yml
+      reddit: Reddit
       twitter: Twitter
       facebook: Facebook
       telegram: Telegram
