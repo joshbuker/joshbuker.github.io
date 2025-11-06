@@ -3,17 +3,13 @@
 # Licensed under MIT
 
 # Post share links
-# for icons https://fontawesome.com/v4.7/icons/
+# for icons https://fontawesome.com/icons/
 # for links https://github.com/bradvin/social-share-urls
 # only {url}, {title}, {text} are supported. {title} and {text} are the same.
 # keys need to match with share. Tooltip definitions in _data/lang/[language].yml file
-
-- twitter:
-  icon: "fa-brands fa-square-twitter"
-  url: "https://twitter.com/intent/tweet?url={url}&text={title}"
-- facebook:
-  icon: "fa-brands fa-square-facebook"
-  url: "https://www.facebook.com/sharer/sharer.php?u={url}"
+- reddit:
+  icon: "fa-brands fa-square-reddit"
+  url: "https://www.reddit.com/submit?url={url}&title={title}"
 - telegram:
   icon: "fa-brands fa-telegram"
   url: "https://t.me/share/url?url={url}&text={text}"

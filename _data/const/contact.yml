@@ -3,7 +3,7 @@
 # Licensed under MIT
 
 # The contact account constants
-# for icons please check this page https://fontawesome.com/v4.7/icons/
+# for icons please check this page https://fontawesome.com/icons/
 #   ex:   icon: "fa fa-github"
 # you can also add svg or png images as icons (local (starts with '/') or http:// or https://)
 #   ex:   icon: "/assets/images/default/sample.svg"
@@ -35,7 +35,7 @@ youtube:
   icon: "fa-brands fa-youtube"
   url: "https://www.youtube.com/channel"
 facebook:
-  icon: "fa fa-facebook"
+  icon: "fa-brands fa-facebook"
   url: "https://www.facebook.com"
 # add your new contact
 # your_new_contact:
