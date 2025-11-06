@@ -148,6 +148,10 @@ archives:
   button_name: Blog Timeline
   page_header: Blog Timeline
 
+now:
+  title: Now
+  button_name: Now
+
 # for about layout
 about:
   title: About

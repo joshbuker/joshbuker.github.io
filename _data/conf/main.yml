@@ -191,6 +191,8 @@ side_and_top_nav_buttons:
     icon: "fa-solid fa-pen-nib"
   - archives:
     icon: "fa-solid fa-timeline"
+  - now:
+    icon: "icon-activity"
   - about:
     icon: "fa-solid fa-address-card"
 

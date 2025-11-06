@@ -142,6 +142,10 @@ home:
   new_posts_title: 新着記事
   new_posts_show_more_button: もっと見る ...
 
+now:
+  title: 今
+  button_name: 今
+
 # for archives layout
 archives:
   title: アーカイブ
