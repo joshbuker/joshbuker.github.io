@@ -150,9 +150,9 @@ now:
 
 # for archives layout
 archives:
-  title: アーカイブ
-  button_name: アーカイブ
-  page_header: アーカイブ
+  title: ブログタイムライン
+  button_name: ブログタイムライン
+  page_header: ブログタイムライン
 
 # for about layout
 about:
