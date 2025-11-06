@@ -8,16 +8,16 @@
 # only {url}, {title}, {text} are supported. {title} and {text} are the same.
 # keys need to match with share. Tooltip definitions in _data/lang/[language].yml file
 - reddit:
-  icon: "fa-brands fa-square-reddit"
+  icon: "fa-brands fa-reddit"
   url: "https://www.reddit.com/submit?url={url}&title={title}"
 - telegram:
   icon: "fa-brands fa-telegram"
   url: "https://t.me/share/url?url={url}&text={text}"
 - linkedin:
-  icon: "fa-brands fa-square-linkedin"
+  icon: "fa-brands fa-linkedin"
   url: "https://www.linkedin.com/sharing/share-offsite/?url={url}"
 - email:
-  icon: "fa-solid fa-square-envelope"
+  icon: "icon-mail"
   url: "mailto:?subject={title}&body={title}%20{url}"
 - copy_link:
   icon: "icon-link-2"
