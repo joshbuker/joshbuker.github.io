@@ -4,8 +4,8 @@ layout: default
 ---
 {%- include multi_lng/get-lng-by-url.liquid -%}
 {%- assign lng = get_lng -%}
-<div class="row">
-  <div class="col-md-12">
+<div class="multipurpose-container">
+  <div class="markdown-style">
     {{ content }}
   </div>
 </div>
