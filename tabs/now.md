@@ -14,5 +14,4 @@ permalink: "/now/"
 
 # What I'm Doing Now
 
-
 Creating a now page! 😂
