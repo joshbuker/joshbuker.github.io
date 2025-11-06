@@ -1,5 +1,5 @@
 ---
-title: Hello World!
+title: こんにちは世界
 category: "general"
 tags: ["blog"]
 img: "/assets/images/stock/hello_world.jpg"
