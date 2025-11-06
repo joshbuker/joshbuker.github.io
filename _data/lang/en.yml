@@ -36,6 +36,8 @@ navigation:
   contact_header: Contact
   side_navigation_button: Side menu
   scroll_back_to_top: Back to top
+  photography_button: Photography
+  digital_garden_button: Digital Garden
 
 color_scheme_switch_tooltip: Color scheme
 
