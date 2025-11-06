@@ -10,7 +10,7 @@ lng:
   # For html tags, you can enable or disable using html_lng_with_country_code defined in _data/conf/main.yml
   # based on ISO_3166-1 https://en.wikipedia.org/wiki/ISO_3166-1_alpha-2
   country: JP
-  switch_title: Jp
+  switch_title: 日本語
   offer:
     title: 言語
     msg_page: このページを日本語で表示する。
