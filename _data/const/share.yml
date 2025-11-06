@@ -17,5 +17,5 @@
   icon: "fa-solid fa-square-envelope"
   url: "mailto:?subject={title}&body={title}%20{url}"
 - copy_link:
-  icon: "icon-link-2"
+  icon: "fa-solid fa-square-arrow-up-right"
   url: ""
