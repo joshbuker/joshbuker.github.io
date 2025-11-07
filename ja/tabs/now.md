@@ -5,7 +5,7 @@ date: 2025-11-07 08:30:00 -0700
 permalink: /ja/now/
 ---
 
-**Last updated:** November 7th, 2025
+**Last updated:** 2025年11月7日
 
 ---
 
