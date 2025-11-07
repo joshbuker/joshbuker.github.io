@@ -60,15 +60,17 @@ There are several areas of focus when it comes to my web presence:
 	- Adding Japanese translations.
 	- Creating new blog posts on various topics.
 	- Creating a [/now page](https://joshbuker.com/now) and updating my [/about page](https://joshbuker.com/about).
+- Creating my digital garden ([notes.joshbuker.com](https://notes.joshbuker.com))
+	- This allows me to publish my personal notes more easily, and [work with the garage door up](https://notes.joshbuker.com/Evergreen+Notes/Working+with+the+garage+door+up).
 - Updating my photography portfolio.
 	- Improve the look and feel of my photography website ([photography.joshbuker.com](https://photography.joshbuker.com)) so that it can replace Instagram entirely.
 		- Switch from [ThumbsUp](https://thumbsup.github.io/) to [Hugo](https://nicokaiser.github.io/hugo-theme-gallery/) to make it look modern and clean.
 	- Migrate all of my photos off of Instagram and redirect it to my personal website instead[^instagram].
-- Updating my GitHub profile, and my top repositories
+- Updating my GitHub profile ([github.com/joshbuker](https://github.com/joshbuker)), and my top repositories
 	- I'd like my profile README to include more graphical elements, be up-to-date with my latest projects, and generally be more presentable.
 	- I also want to do a pass on the README's for each of my favorite repositories and make sure those all look good as well.
 - Update my social media and leverage them for reaching out to new like-minded people.
-	- Update my LinkedIn and Mastodon profiles, ensuring they're reflective of my latest efforts.
+	- Update my [LinkedIn](https://www.linkedin.com/in/joshbuker/) and [Mastodon](https://infosec.exchange/@joshbuker) profiles, ensuring they're reflective of my latest efforts.
 	- Link my blog posts/videos on LinkedIn and Mastodon to improve my reach.
 
 [^instagram]: I would delete Instagram entirely, given how terrible Meta is about privacy, however it is a useful tool for networking with other photographers and models. Until I can find a replacement, or be certain that I don't need it for networking, it will remain a simple redirect in the meantime.
