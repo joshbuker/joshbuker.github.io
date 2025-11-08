@@ -27,7 +27,7 @@ I'm working at [Cloud Security Alliance](https://cloudsecurityalliance.org), cre
 
 I've recently delved into the rabbit-hole that is [NixOS](https://nixos.org/), and have been thoroughly enjoying the declarative paradigm of system management. The biggest downfall of NixOS, however, is the documentation. To be blunt, it's god-awful. Errors are esoteric, documentation outdated or missing, and it took me three "try-give up for 2 weeks-try again" cycles before I even could get myself started with it.
 
-But, complaining about something without offering assistance is generally not useful, so I'm planning to do my part to help, in the spirit of [Open Source Software (OSS)](https://www.fsf.org/about/what-is-free-software). I'm cleaning up my personal NixOS config to be reusable as a template, and planning to do a series of Getting Started videos and companion blog posts to help others get started. In particular, I'm wanting to show folks how to switch from Pop! OS to using NixOS with Pop Shell (functionally equivalent), and a few explanation videos with [Manim](https://notes.joshbuker.com/Evergreen+Notes/Manim) for covering how Nix itself works.
+But, complaining about something without offering assistance is generally not useful, so I'm planning to do my part to help in the spirit of [Open Source Software (OSS)](https://www.fsf.org/about/what-is-free-software). I'm cleaning up my personal NixOS config to be reusable as a template, and planning to do a series of Getting Started videos and companion blog posts to help others get started. In particular, I'm wanting to show folks how to switch from Pop! OS to using NixOS with Pop Shell (functionally equivalent), and a few explanation videos with [Manim](https://notes.joshbuker.com/Evergreen+Notes/Manim) for covering how Nix itself works.
 
 ## Hobbies I'm focusing on
 
@@ -60,13 +60,13 @@ There are several areas of focus when it comes to my web presence:
 	- Adding Japanese translations.
 	- Creating new blog posts on various topics.
 	- Creating a [/now page](https://joshbuker.com/now) and updating my [/about page](https://joshbuker.com/about).
-- Creating my digital garden ([notes.joshbuker.com](https://notes.joshbuker.com))
+- Creating my digital garden ([notes.joshbuker.com](https://notes.joshbuker.com)).
 	- This allows me to publish my personal notes more easily, and [work with the garage door up](https://notes.joshbuker.com/Evergreen+Notes/Working+with+the+garage+door+up).
 - Updating my photography portfolio.
 	- Improve the look and feel of my photography website ([photography.joshbuker.com](https://photography.joshbuker.com)) so that it can replace Instagram entirely.
 		- Switch from [ThumbsUp](https://thumbsup.github.io/) to [Hugo](https://nicokaiser.github.io/hugo-theme-gallery/) to make it look modern and clean.
-	- Migrate all of my photos off of Instagram and redirect it to my personal website instead[^instagram].
-- Updating my GitHub profile ([github.com/joshbuker](https://github.com/joshbuker)), and my top repositories
+	- Migrate all of my photos off of Instagram and redirect it to my personal website instead.[^instagram]
+- Updating my GitHub profile ([github.com/joshbuker](https://github.com/joshbuker)), and my top repositories.
 	- I'd like my profile README to include more graphical elements, be up-to-date with my latest projects, and generally be more presentable.
 	- I also want to do a pass on the README's for each of my favorite repositories and make sure those all look good as well.
 - Update my social media and leverage them for reaching out to new like-minded people.
