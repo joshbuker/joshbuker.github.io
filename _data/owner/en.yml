@@ -54,7 +54,7 @@ contacts:
   #- twitter: "josh_buker"
   - mastodon: "@joshbuker"
   - instagram: "joshbuker"
-  #- youtube: ""
+  - youtube: "@JoshBuker"
   #- facebook: ""
 # to add more, check the _data/const/contact.yml file
 #  - your_new_contact: ""
