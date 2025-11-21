@@ -42,9 +42,9 @@ You will be able to choose which desktop environment you want to start with (e.g
 
 There are plenty of programs for creating a installation USB from a USB drive, and it doesn't matter much which one you use.
 
-- [Rufus](https://rufus.ie/en/)
 - [Balena Etcher](https://etcher.balena.io/)
 - [Popsicle](https://github.com/pop-os/popsicle)
+- [Rufus](https://rufus.ie/en/)
 - Your own favorite bootable USB creator...
 
 Follow the instructions for the flashing program you chose to use.
