@@ -4,7 +4,7 @@ category: technology
 tags:
   - guides
   - nixos
-date: 2025-11-20 19:30:00 -0700
+date: 2025-11-20 22:45:00 -0700
 img: /assets/images/posts/nixos.png
 ---
 ![NixOS](/assets/images/posts/nixos.png)
@@ -65,14 +65,40 @@ Many videos and guides you'll find will either provide dotfiles that you can try
 
 I would recommend instead creating a dotfiles git repo to hold your configuration, and cloning it to `~/.dotfiles`
 
-### Create the repo
+### Step 1: Create the repo
 
-From [GitHub](https://github.com) (or your own preferred remote hosting Git service such as [GitLab](https://gitlab.com) or [Gittea](https://about.gitea.com/)), create a new repository. If you prefer, I have a template that you can use to get started: [github.com/joshbuker/nixos-pop-shell-template](https://github.com/joshbuker/nixos-pop-shell-template)
+From [GitHub](https://github.com) (or your own preferred remote hosting Git service such as [GitLab](https://gitlab.com) or [Gittea](https://about.gitea.com/)), create a new repository. If you prefer, I have a template that you can use to get started: [github.com/joshbuker/nixos-pop-shell-template](https://github.com/joshbuker/nixos-pop-shell-template)^[Click on "Use this template" → "Create a new repository"]
 
-### Clone the repo
-### Copy your configuration to the repo
-### Rebuild using the repo moving forward
-#### With Flakes
+### Step 2: Clone the repo
+
+Install Git by adding it to your system packages:
+
+```nix
+environment.systemPackages = [
+  pkgs.git
+];
+```
+
+Then clone your repository:
+
+```sh
+git clone {repo url} ~/.dotfiles
+```
+
+### Step 3: Copy your configuration to the repo
+
+https://github.com/joshbuker/nixos-pop-shell-template/tree/main/nixos/bootstrap#clean-up-and-switch-to-hosts
+
+If using my Pop Shell template, you can now copy your current configuration to the dotfiles:
+
+```sh
+mkdir -p ~/.dotfiles/nixos/hosts/{hostname}
+cp /etc/nixos/configuration.nix ~/.dotfiles/nixos/hosts/{hostname}/configuration.nix
+cp /etc/nixos/hardware-configuration.nix ~/.dotfiles/nixos/hosts/{hostname}/hardware-configuration.nix
+```
+
+### Step 4: Rebuild using your dotfiles moving forward
+#### With Flakes (recommended)
 
 ```sh
 sudo nixos-rebuild switch --flake ~/.dotfiles/nixos/#hostname
@@ -84,14 +110,24 @@ sudo nixos-rebuild switch --flake ~/.dotfiles/nixos/#hostname
 > sudo nixos-rebuild switch --flake ~/.dotfiles/nixos/#
 > ```
 
-#### Without Flakes
+If you are using my template, it will use home manager to install some aliases, including one for running a rebuild script that includes the above command.
 
 ```sh
-sudo nixos-rebuild switch -I nixos-config=path/to/configuration.nix
+rebuild
+```
+
+#### Without Flakes
+
+You can also rebuild without flakes, using a slightly different command.
+
+```sh
+sudo nixos-rebuild switch -I nixos-config=/home/{username}/.dotfiles/nixos/hosts/{hostname}/configuration.nix
 ```
 
 ```nix
 {
-  nix.nixPath = [ "nixos-config=/path/to/configuration.nix" ];
+  nix.nixPath = [ "nixos-config=/home/{username}/.dotfiles/nixos/hosts/{hostname}/configuration.nix" ];
 }
 ```
+
+Replace `{username}` with the username of the user you will be rebuilding NixOS with and `{hostname}` with the hostname of your current machine.
