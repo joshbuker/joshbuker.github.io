@@ -7,6 +7,8 @@
 !.ruby-version
 !.keep
 !.devcontainer
+!.obsidian
+.obsidian/workspace.json
 
 # jekyll Cache
 _site
