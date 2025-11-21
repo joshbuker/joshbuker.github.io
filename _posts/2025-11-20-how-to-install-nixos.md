@@ -27,6 +27,8 @@ Current as of NixOS 25.05, last updated on November 20th, 2025.
 
 Download the latest Graphical installation ISO image: https://nixos.org/download.html#nixos-iso
 
+![NixOS Download Page](/assets/images/posts/nixos_iso_download.png)
+
 If all you see is the Nix Package Manager, and you can't find the installation ISO, keep scrolling down. It's below the fold and can be easy to miss.^[This threw me off for longer than I'd like to admit, when I was getting started with NixOS...Maybe I'll chat with someone about making that easier to find.]
 
 You will be able to choose which desktop environment you want to start with (e.g. Gnome, KDE, XFCE, etc) when going through the installation wizard process. If you don't know what this is, just pick whatever one you like the look of when it asks you (it includes screenshots of each).
