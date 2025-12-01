@@ -1,10 +1,10 @@
 ---
 title: こんにちは世界
+lng_pair: id_hello_world
 category: "general"
 tags: ["blog"]
 img: "/assets/images/stock/hello_world.jpg"
 date: 2022-07-06 18:48:00 -0700
-lng_pair: id_hello_world
 
 # seo
 # if not specified, date will be used.

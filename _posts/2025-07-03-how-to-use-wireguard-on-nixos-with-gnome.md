@@ -1,5 +1,6 @@
 ---
 title: How to use Wireguard on NixOS with Gnome
+lng_pair: how_to_use_wireguard_on_nixos_with_gnome
 category: "technology"
 tags: ["guides", "nixos", "wireguard", "gnome"]
 img: "/assets/images/posts/nixos.png"

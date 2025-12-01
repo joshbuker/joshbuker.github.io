@@ -1,5 +1,6 @@
 ---
 title: Running Plex with Docker and NFS
+lng_pair: running_plex_with_docker_and_nfs
 category: "technology"
 tags: ["guides","plex","docker","nfs"]
 img: "/assets/images/stock/popcorn.jpg"

@@ -1,5 +1,6 @@
 ---
 title: How to Setup a TrueNAS Scale Server
+lng_pair: how_to_setup_a_truenas_scale_server
 category: "technology"
 tags: ["guides","truenas","nfs"]
 img: "/assets/images/stock/blue_data_center.jpg"

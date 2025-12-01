@@ -1,5 +1,6 @@
 ---
 title: How to install Portainer
+lng_pair: how_to_install_portainer
 category: "technology"
 tags: ["guides","docker"]
 img: "/assets/images/stock/portainer.jpg"

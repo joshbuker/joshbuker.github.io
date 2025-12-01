@@ -1,5 +1,6 @@
 ---
 title: Installing OpenMediaVault to an ODroid M1
+lng_pair: installing_openmediavault_to_an_odroid_m1
 category: "technology"
 tags: ["guides"]
 img: "/assets/images/posts/odroid_m1.png"

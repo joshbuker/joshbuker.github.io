@@ -1,5 +1,6 @@
 ---
 title: How to use a GPG Smartcard for Git and SSH
+lng_pair: id_how_to_use_a_gpg_smartcard_for_git_and_ssh
 category: technology
 tags:
   - guides

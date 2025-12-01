@@ -1,5 +1,6 @@
 ---
 title: How to Dev Containerify a Project
+lng_pair: how_to_dev_containerify_a_project
 category: "technology"
 tags: ["guides","docker"]
 img: "/assets/images/stock/code.jpg"

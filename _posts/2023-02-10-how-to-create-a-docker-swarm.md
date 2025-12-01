@@ -1,5 +1,6 @@
 ---
 title: How to create a Docker Swarm
+lng_pair: how_to_create_a_docker_swarm
 category: "technology"
 tags: ["guides","docker"]
 img: "/assets/images/stock/container_ship_swarm.jpg"

@@ -1,5 +1,6 @@
 ---
 title: How to install Docker
+lng_pair: how_to_install_docker
 category: "technology"
 tags: ["guides","docker"]
 img: "/assets/images/stock/container_ship.jpg"
