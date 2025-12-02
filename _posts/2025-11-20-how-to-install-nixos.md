@@ -1,5 +1,6 @@
 ---
 title: How to Install NixOS
+lng_pair: how_to_install_nixos
 category: technology
 tags:
   - guides
