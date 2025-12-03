@@ -1,27 +1,27 @@
-# this will handle to macos hidden folders
-# ignore all starts with .* except .git and so on
-.*
-!.git*
-!.editorconfig
-!.ruby-gemset
-!.ruby-version
-!.keep
-!.devcontainer
-!.obsidian
-.obsidian/workspace.json
-
-# jekyll Cache
-_site
-.sass-cache
-.jekyll-metadata
+# Bundler cache
+.bundle
+vendor
 Gemfile.lock
 
-# OS generated
-ehthumbs.db
-Thumbs.db
+# Jekyll cache
+.jekyll-cache
+.jekyll-metadata
+_site
 
-# diff files
-*.bak
+# RubyGems
+*.gem
 
-# updating Gemfile automatically using github actions
-vendor
+# NPM dependencies
+node_modules
+package-lock.json
+
+# IDE configurations
+.idea
+.vscode/*
+!.vscode/settings.json
+!.vscode/extensions.json
+!.vscode/tasks.json
+
+# Misc
+_sass/vendors
+assets/js/dist
