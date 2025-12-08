@@ -134,7 +134,7 @@ In other words, create a single "SmartCard" entry in your password manager with 
 Generate the main key (used for signing the subkeys):
 
 ```sh
-gpg --full-generate-key
+gpg --expert --full-generate-key
 ```
 
 Use the following settings:
