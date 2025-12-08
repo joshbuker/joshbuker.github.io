@@ -23,8 +23,8 @@ This guide assumes that you are using a YubiKey and NixOS, but should largely be
 
 <!-- outline end -->
 
-> NOTE:
 > Due to current limitations, you cannot have multiple SmartCards that all work simultaneously using the same keys. You can however copy the backed up keys to a new SmartCard, and only need to change the configuration on your client device(s), not any servers. This is because GPG will look for the serial number of the SmartCard when completing operations, which will only ever point to one card at a time. Also, the stubs created will be unique for each SmartCard despite using the same underlying keys. At time of writing, there are no reasonable workarounds for this issue.
+{: .prompt-info }
 
 ## References
 
@@ -44,8 +44,8 @@ This guide assumes that you are using a YubiKey and NixOS, but should largely be
 
 Select a computer that you would like to use for generating the secret keys and uploading them to your SmartCard(s). This should be a secure computer that you trust and personally control.
 
-> NOTE:
 > Using a live boot operating system during this process may reduce the risk of your secret keys being cached on disk and later retrieved by an attacker, but is not necessary to follow this guide. Likewise, having a computer with hardware kill switches for networking, or removing the networking equipment during key generation and upload may also reduce the chances of the keys being stolen by an attacker. However, this is almost certainly overkill for the vast majority of people, and simply using a personal device and turning off the network connection via software should be sufficient in most cases.
+{: .prompt-info }
 
 On that computer, you will need to install GnuPG and enable SmartCard support.
 
@@ -103,6 +103,7 @@ Use home manager to source the `.bashrc` file (once you're done following the re
   };
 }
 ```
+{: file='home.nix'}
 
 The first half is where the file will be symlinked to within your home folder, while the second half is the relative path where the config lives from the perspective of the home manager nix file. I will go more in-depth on how to configure this in a follow up guide on getting started with NixOS.
 
@@ -126,8 +127,8 @@ In other words, create a single "SmartCard" entry in your password manager with 
 - Admin PIN - Used when changing SmartCard settings
 - Unlock PIN - Used if you accidentally use the incorrect user pin too many times and lock the device
 
-> NOTE:
 > There are some concerns around ECC cryptography potentially having NSA backdoors and being susceptible to future quantum computer attacks. This guide recommends the use of RSA 4096 keys, but check for the currently recommended best practices on GPG keys as they may have changed since time of writing.
+{: .prompt-info }
 
 Generate the main key (used for signing the subkeys):
 
@@ -326,6 +327,7 @@ Add it to your .gitconfig, removing the `rsa4096/` first:
   email = git-commit@example.com
   signingKey = <sign only subkey id in long format>
 ```
+{: file='.gitconfig' }
 
 If using NixOS, uncomment the `.gitconfig` line in home manager.
 
