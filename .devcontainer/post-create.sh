@@ -7,12 +7,16 @@ if [ -f package.json ]; then
 fi
 
 # Install dependencies for shfmt extension
-curl -sS https://webi.sh/shfmt | sh &>/dev/null
+# curl -sS https://webi.sh/shfmt | sh &>/dev/null
 
 # Add OMZ plugins
-git clone https://github.com/zsh-users/zsh-syntax-highlighting.git ~/.oh-my-zsh/custom/plugins/zsh-syntax-highlighting
-git clone https://github.com/zsh-users/zsh-autosuggestions ~/.oh-my-zsh/custom/plugins/zsh-autosuggestions
-sed -i -E "s/^(plugins=\()(git)(\))/\1\2 zsh-syntax-highlighting zsh-autosuggestions\3/" ~/.zshrc
+# git clone https://github.com/zsh-users/zsh-syntax-highlighting.git ~/.oh-my-zsh/custom/plugins/zsh-syntax-highlighting
+# git clone https://github.com/zsh-users/zsh-autosuggestions ~/.oh-my-zsh/custom/plugins/zsh-autosuggestions
+# sed -i -E "s/^(plugins=\()(git)(\))/\1\2 zsh-syntax-highlighting zsh-autosuggestions\3/" ~/.zshrc
 
 # Avoid git log use less
-echo -e "\nunset LESS" >>~/.zshrc
+# echo -e "\nunset LESS" >>~/.zshrc
+
+bundle config set path vendor/bundle
+bundle install --jobs=1
+bundle exec jekyll serve -w --safe --host localhost --port 3000 --drafts --future --trace
