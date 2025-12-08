@@ -1,6 +1,7 @@
 ---
 # the default layout is 'page'
-icon: fas fa-info-circle
+title: whoami
+icon: fas fa-address-card
 order: 4
 ---
 

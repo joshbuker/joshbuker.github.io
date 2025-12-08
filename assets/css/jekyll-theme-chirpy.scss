@@ -1,0 +1,29 @@
+---
+---
+
+/* prettier-ignore */
+@use 'main
+{%- if jekyll.environment == 'production' -%}
+  .bundle
+{%- endif -%}
+';
+
+/* append your custom style below */
+@use 'abstracts/variables' as v;
+@use 'abstracts/mixins' as mx;
+@use 'abstracts/breakpoints' as bp;
+@use 'abstracts/placeholders';
+
+.sidebar-bottom > span > .social-link {
+  @extend %button;
+  @extend %sidebar-link-hover;
+  @extend %clickable-transition;
+
+  &:not(:last-child) {
+    margin-right: v.$sb-btn-gap;
+
+    @include bp.xxxl {
+      margin-right: v.$sb-btn-gap-lg;
+    }
+  }
+}
