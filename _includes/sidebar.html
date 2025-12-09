@@ -11,7 +11,18 @@
       {%- endif -%}
     </a>
 
-    <a class="site-title d-block" href="{{ '/' | relative_url }}">{{ site.title }}</a>
+    {% comment %} <a class="site-title d-block" href="{{ '/' | relative_url }}">{{ site.title }}</a> {% endcomment %}
+    <a
+      class="site-title d-block stack"
+      aria-label="{{ site.title }}"
+      href="{{ '/' | relative_url }}"
+      data-text="{{ site.title }}"
+      style="--stacks: 3;"
+    >
+      <span style="--index: 0;">{{ site.title }}</span>
+      <span style="--index: 1;">{{ site.title }}</span>
+      <span style="--index: 2;">{{ site.title }}</span>
+    </a>
     <p class="site-subtitle fst-italic mb-0">{{ site.tagline }}</p>
   </header>
   <!-- .profile-wrapper -->
