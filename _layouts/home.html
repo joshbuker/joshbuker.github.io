@@ -1,0 +1,32 @@
+---
+layout: default
+---
+{% include lang.html %}
+
+<article class="px-1">
+  {% if page.layout == 'page' or page.collection == 'tabs' %}
+    {% assign tab_key = page.title | downcase %}
+    {% assign title = site.data.locales[lang].tabs[tab_key] | default: page.title %}
+  {% endif %}
+  <div class="content plain-page">
+    {{ content }}
+  </div>
+  <div style="justify-content: center; display: flex;">
+    <div class="new-posts plain-page">
+      <h1>New Articles</h1>
+      <ul>
+        {% for post in site.posts limit: 4 %}
+          <li>
+            <a href="{{ post.url | relative_url }}">
+              {{ post.title }}
+              <span>{{ post.date | date: '%B %-d, %Y' }} </span>
+            </a>
+          </li>
+        {% endfor %}
+        <li>
+          <a href="{{ '/blog/' | relative_url }}">See all articles...</a>
+        </li>
+      </ul>
+    </div>
+  </div>
+</article>

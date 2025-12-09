@@ -87,6 +87,46 @@ span:not(:last-child) > a.social-link {
   }
 }
 
+.new-posts {
+  margin-top: 2rem;
+  width: 90%;
+
+  h1 {
+    margin-top: 0;
+  }
+
+  ul {
+    margin-bottom: 0;
+    list-style: none;
+    display: contents;
+
+    li > a {
+      display: block;
+    }
+
+    li > a:hover {
+      text-decoration: underline;
+      color: color-mix(in srgb, var(--link-color) 80%, black 20%);
+    }
+
+    li {
+      position: relative;
+    }
+
+    li :not(span) {
+      text-overflow: ellipsis;
+      white-space: nowrap;
+      overflow: hidden;
+      width: 65%;
+    }
+
+    li span {
+      position: absolute;
+      right: 0;
+    }
+  }
+}
+
 @font-face {
   font-family: "Venera";
   src: url('/assets/fonts/Venera-500.otf') format('opentype');
