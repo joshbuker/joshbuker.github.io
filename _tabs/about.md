@@ -1,5 +1,6 @@
 ---
 # the default layout is 'page'
+layout: plain-page
 title: whoami
 icon: fas fa-address-card
 order: 6

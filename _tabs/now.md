@@ -1,5 +1,6 @@
 ---
 # the default layout is 'page'
+layout: plain-page
 icon: icon-activity
 order: 5
 ---
