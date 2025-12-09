@@ -1,15 +1,15 @@
 ---
 title: How to use a GPG Smartcard for Git and SSH
-lng_pair: id_how_to_use_a_gpg_smartcard_for_git_and_ssh
-category: technology
+categories:
+  - Guides
 tags:
-  - guides
-  - smartcard
-  - gpg
-  - git
-  - ssh
-  - yubikey
-  - nitrokey
+  - Smart Card
+  - GnuPG
+  - GPG
+  - Git
+  - SSH
+  - YubiKey
+  - NitroKey
 date: 2025-09-14 13:50:00 -0700
 image: /assets/images/stock/yubikey.jpg
 ---

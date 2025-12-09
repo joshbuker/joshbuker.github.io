@@ -1,13 +1,13 @@
 ---
 title: How to Install NixOS
-lng_pair: how_to_install_nixos
-category: technology
-tags:
-  - guides
-  - nixos
-date: 2025-11-20 22:45:00 -0700
-image: /assets/images/posts/nixos.png
 description: So you've heard about NixOS, and you want to give it a try. Let's get you started!
+categories:
+  - Guides
+  - NixOS
+tags:
+  - NixOS
+image: /assets/images/posts/nixos.png
+date: 2025-11-20 22:45:00 -0700
 ---
 
 <!-- outline start -->

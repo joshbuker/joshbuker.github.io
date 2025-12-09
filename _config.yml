@@ -3,11 +3,12 @@
 # Import the theme
 theme: jekyll-theme-chirpy
 whitelist:
-  - jekyll-paginate
+  - jekyll-archives
   - jekyll-include-cache
+  - jekyll-paginate
   - jekyll-seo-tag
-  # - jekyll-sitemap
-  # - jekyll-archives
+  - jekyll-sitemap
+  - jekyll-redirect-from
 
 # The language of the webpage › http://www.lingoes.net/en/translator/langcode.htm
 # If it has the same name as one of the files in folder `_data/locales`, the layout language will also be changed,
@@ -36,6 +37,11 @@ github:
 
 twitter:
   username: # change to your Twitter username
+
+author:
+  name: Josh Buker # change to your full name
+  url: "https://joshbuker.com/about/2" # change to your personal homepage
+  picture: "/assets/images/default/profile.jpg"
 
 social:
   # Change to your full name.

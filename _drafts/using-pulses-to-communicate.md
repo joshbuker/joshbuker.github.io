@@ -1,7 +1,11 @@
 ---
 title: "Using Pulses to Communicate"
-category: "engineering"
-tags: ["ppm","pwm"]
+categories:
+  - Journaling
+tags:
+  - Engineering
+  - PPM
+  - PWM
 image: "/assets/images/posts/rising_vs_falling_edge.jpg"
 ---
 

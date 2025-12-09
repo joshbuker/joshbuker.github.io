@@ -1,8 +1,12 @@
 ---
 title: How to Setup a TrueNAS Scale Server
 lng_pair: how_to_setup_a_truenas_scale_server
-category: "technology"
-tags: ["guides","truenas","nfs"]
+categories:
+  - Guides
+  - Homelab
+tags:
+  - TrueNAS
+  - NFS
 image: "/assets/images/stock/blue_data_center.jpg"
 date: 2023-03-20 22:15:00 -0700
 ---

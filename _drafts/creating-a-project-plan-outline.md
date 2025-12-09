@@ -1,9 +1,11 @@
 ---
 title: Creating a Project Plan Outline
-category: organization
+categories:
+  - Guides
 tags:
-  - guides
-  - projects
+  - Projects
+  - Organization
+  - Obsidian
 ---
 <!-- outline-start -->
 

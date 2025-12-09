@@ -1,9 +1,10 @@
 ---
 title: Hello World!
-lng_pair: id_hello_world
-category: "general"
-tags: ["blog"]
-img: "/assets/images/stock/hello_world.jpg"
+categories:
+  - Journaling
+tags:
+  - Blog
+image: "/assets/images/stock/hello_world.jpg"
 date: 2022-07-06 18:48:00 -0700
 pin: true
 

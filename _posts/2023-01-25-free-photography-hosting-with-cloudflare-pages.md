@@ -1,8 +1,10 @@
 ---
 title: Free Photography Hosting with Cloudflare Pages
 lng_pair: free_photography_hosting_with_cloudflare_pages
-category: "technology"
-tags: ["guides","photography"]
+categories:
+  - Guides
+tags:
+  - Photography
 image: "/assets/images/stock/cloud_lightbulbs.jpg"
 date: 2023-01-25 19:45:00 -0700
 ---
