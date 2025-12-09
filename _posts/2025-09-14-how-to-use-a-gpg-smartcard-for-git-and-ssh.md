@@ -10,6 +10,7 @@ tags:
   - SSH
   - YubiKey
   - NitroKey
+  - NixOS
 date: 2025-09-14 13:50:00 -0700
 image: /assets/images/stock/yubikey.jpg
 ---
