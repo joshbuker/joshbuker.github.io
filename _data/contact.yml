@@ -17,10 +17,10 @@
   url: "https://www.instagram.com/joshbuker/"
   tooltip: "Instagram"
 
-# - type: youtube
-#   icon: "fab fa-youtube"
-#   url: "https://www.youtube.com/c/JoshBuker"
-#   tooltip: "YouTube"
+- type: youtube
+  icon: "fab fa-youtube"
+  url: "https://www.youtube.com/@JoshBuker"
+  tooltip: "YouTube"
 
 # - type: email
 #   icon: "fas fa-envelope"

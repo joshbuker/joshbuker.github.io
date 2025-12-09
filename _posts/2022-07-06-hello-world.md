@@ -5,6 +5,7 @@ category: "general"
 tags: ["blog"]
 img: "/assets/images/stock/hello_world.jpg"
 date: 2022-07-06 18:48:00 -0700
+pin: true
 
 # seo
 # if not specified, date will be used.

@@ -3,6 +3,7 @@
 source "https://rubygems.org"
 
 gem "jekyll-theme-chirpy", "~> 7.4", ">= 7.4.1"
+gem "logger" # Silence deprecation warnings from Ruby 3.5+
 
 gem "html-proofer", "~> 5.0", group: :test
 
