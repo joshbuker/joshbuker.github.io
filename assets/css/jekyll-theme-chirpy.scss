@@ -53,20 +53,11 @@
     align-items: center;
 
     audio {
-      transform: translateY(2rem);
+      transform: translateY(3.5rem);
     }
   }
 
   hr {
-    // border-color: var(--text-color);
     border-color: color-mix(in srgb, var(--text-color), transparent 70%);
   }
 }
-
-// html[data-mode="light"] .plain-page > hr {
-//   border-color: aqua;
-// }
-
-// html:not([data-mode="light"]) .plain-page > hr {
-//   border-color: red;
-// }
