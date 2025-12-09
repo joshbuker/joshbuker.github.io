@@ -10,9 +10,48 @@
 
 /* append your custom style below */
 
+.sidebar-content {
+  margin-bottom: 0 !important;
+
+  .contact-header {
+    width: 100%;
+    position: relative;
+    margin: 0 0 0.5rem 0;
+
+    span {
+      // position: relative;
+      // z-index: 2;
+      position: absolute;
+      top: 0.25rem;
+      margin: 0;
+      padding: 0 1rem;
+      color: var(--text-color);
+      background-color: var(--sidebar-bg);
+      font-size: 1rem;
+      font-weight: 400;
+      transform: translateX(-50%);
+      left: 50%;
+      white-space: nowrap;
+    }
+  }
+}
+
+.sidebar-bottom {
+  justify-content: center;
+
+  hr {
+    width: 100%;
+    border-color: color-mix(in srgb, var(--text-color), transparent 70%);
+  }
+}
+
 span:not(:last-child) > a.social-link {
   margin-right: 0.5rem;
 }
+
+// span > a.social-link {
+//   margin: 0.25rem;
+// }
 
 .plain-page {
   border-radius: 1rem;
