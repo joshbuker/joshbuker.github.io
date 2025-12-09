@@ -1,5 +1,5 @@
 ---
-img: "/assets/images/posts/sorcery.jpg"
+image: "/assets/images/posts/sorcery.jpg"
 ---
 
 ![Sorcery](/assets/images/posts/sorcery.jpg)

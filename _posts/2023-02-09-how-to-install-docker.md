@@ -3,11 +3,9 @@ title: How to install Docker
 lng_pair: how_to_install_docker
 category: "technology"
 tags: ["guides","docker"]
-img: "/assets/images/stock/container_ship.jpg"
+image: "/assets/images/stock/container_ship.jpg"
 date: 2023-02-09 21:20:00 -0700
 ---
-
-![Container Ship](/assets/images/stock/container_ship.jpg)
 
 <!-- outline-start -->
 

@@ -3,11 +3,9 @@ title: How to Dev Containerify a Project
 lng_pair: how_to_dev_containerify_a_project
 category: "technology"
 tags: ["guides","docker"]
-img: "/assets/images/stock/code.jpg"
+image: "/assets/images/stock/code.jpg"
 date: 2023-03-16 00:35:00 -0700
 ---
-
-![Code](/assets/images/stock/code.jpg)
 
 <!-- outline-start -->
 

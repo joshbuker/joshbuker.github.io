@@ -2,10 +2,8 @@
 title: "Using Pulses to Communicate"
 category: "engineering"
 tags: ["ppm","pwm"]
-img: "/assets/images/posts/rising_vs_falling_edge.jpg"
+image: "/assets/images/posts/rising_vs_falling_edge.jpg"
 ---
-
-![Rising vs Falling Edge](/assets/images/posts/rising_vs_falling_edge.jpg)
 
 <!--
 Notes:

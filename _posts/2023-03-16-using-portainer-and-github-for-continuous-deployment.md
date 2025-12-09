@@ -3,11 +3,9 @@ title: Using Portainer and GitHub for Continuous Deployment
 lng_pair: using_portainer_and_github_for_continuous_deployment
 category: "technology"
 tags: ["guides","docker"]
-img: "/assets/images/stock/continuous_deployment.jpg"
+image: "/assets/images/stock/continuous_deployment.jpg"
 date: 2023-03-16 00:14:00 -0700
 ---
-
-![Continuous Deployment](/assets/images/stock/continuous_deployment.jpg)
 
 <!-- outline-start -->
 

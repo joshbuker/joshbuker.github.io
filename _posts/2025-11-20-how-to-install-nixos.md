@@ -6,10 +6,9 @@ tags:
   - guides
   - nixos
 date: 2025-11-20 22:45:00 -0700
-img: /assets/images/posts/nixos.png
+image: /assets/images/posts/nixos.png
 description: So you've heard about NixOS, and you want to give it a try. Let's get you started!
 ---
-![NixOS](/assets/images/posts/nixos.png)
 
 <!-- outline start -->
 

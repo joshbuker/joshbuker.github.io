@@ -25,8 +25,6 @@ date: 2022-07-06 18:48:00 -0700
 #published: false
 ---
 
-![Hello World](/assets/images/stock/hello_world.jpg)
-
 <!-- outline-start -->
 
 Welcome to my first blog post.
