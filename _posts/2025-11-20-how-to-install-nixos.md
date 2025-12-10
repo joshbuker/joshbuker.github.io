@@ -8,15 +8,12 @@ tags:
   - NixOS
 image: /assets/images/posts/nixos.png
 date: 2025-11-20 22:45:00 -0700
+last_modified_at: 2025-12-10 14:20:00 -0700
 ---
-
-<!-- outline start -->
 
 So you've heard about NixOS, and you want to give it a try. Let's get you started!
 
-<!-- outline end -->
-
-Current as of NixOS 25.05, last updated on November 20th, 2025.
+Current as of NixOS 25.11, last updated on December 10th, 2025.
 
 ## Requirements
 
