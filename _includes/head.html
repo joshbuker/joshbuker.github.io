@@ -9,58 +9,14 @@
     content="width=device-width, user-scalable=no initial-scale=1, shrink-to-fit=no, viewport-fit=cover"
   >
 
-  {%- capture seo_tags -%}
-    {% seo title=false %}
-  {%- endcapture -%}
-
-  <!-- Setup Open Graph image -->
-
-  {% if page.image %}
-    {% assign src = page.image.path | default: page.image %}
-
-    {% unless src contains '://' %}
-      {%- capture img_url -%}
-        {% include media-url.html src=src subpath=page.media_subpath absolute=true %}
-      {%- endcapture -%}
-
-      {%- capture old_url -%}{{ src | absolute_url }}{%- endcapture -%}
-      {%- capture new_url -%}{{ img_url }}{%- endcapture -%}
-
-      {% assign seo_tags = seo_tags | replace: old_url, new_url %}
-    {% endunless %}
-
-  {% elsif site.social_preview_image %}
-    {%- capture img_url -%}
-      {% include media-url.html src=site.social_preview_image absolute=true %}
-    {%- endcapture -%}
-
-    {%- capture og_image -%}
-      <meta property="og:image" content="{{ img_url }}" />
-    {%- endcapture -%}
-
-    {%- capture twitter_image -%}
-      <meta name="twitter:card" content="summary_large_image" />
-      <meta property="twitter:image" content="{{ img_url }}" />
-    {%- endcapture -%}
-
-    {% assign old_meta_clip = '<meta name="twitter:card" content="summary" />' %}
-    {% assign new_meta_clip = og_image | append: twitter_image %}
-    {% assign seo_tags = seo_tags | replace: old_meta_clip, new_meta_clip %}
+  {% if page.title.size > 50 %}
+    {% assign truncated_title = page.title | truncate: 60 %}
+  {% else %}
+    {% assign truncated_title = page.title | append: ' | ' | append: site.title %}
   {% endif %}
+  <title>{{ truncated_title }}</title>
 
-  {{ seo_tags }}
-
-  {%- if site.social.fediverse_handle %}
-    <!-- Fediverse handle/creator -->
-    <meta name="fediverse:creator" content="{{ site.social.fediverse_handle }}">
-  {% endif %}
-
-  <title>
-    {%- unless page.layout == 'home' -%}
-      {{ page.title | append: ' | ' }}
-    {%- endunless -%}
-    {{ site.title }}
-  </title>
+  {% include seo-metadata.html %}
 
   {% include_cached favicons.html %}
 
