@@ -40,19 +40,20 @@ url: "https://joshbuker.com"
 github:
   username: joshbuker # change to your GitHub username
 
-twitter:
-  username: # change to your Twitter username
+# twitter:
+#   username: # change to your Twitter username
 
-author:
-  name: Josh Buker # change to your full name
-  url: "https://joshbuker.com/about/2" # change to your personal homepage
-  picture: "/assets/images/default/profile.jpg"
+author: joshbuker
+  # name: Josh Buker # change to your full name
+  # url: "https://joshbuker.com/about/" # change to your personal homepage
+  # picture: "/assets/images/default/profile.jpg"
 
 social:
   # Change to your full name.
   # It will be displayed as the default author of the posts and the copyright owner in the Footer
   name: Josh Buker
   email: contact+blog@joshbuker.com # change to your email address
+  fediverse_handle: "@joshbuker@infosec.exchange"
   links:
     - https://joshbuker.com/about/
     # The first element serves as the copyright owner's link
