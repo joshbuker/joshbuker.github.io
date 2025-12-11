@@ -3,6 +3,14 @@
 source "https://rubygems.org"
 
 gem "jekyll-theme-chirpy", "~> 7.4", ">= 7.4.1"
+
+# Jekyll Plugins - Automatically included with the theme
+# gem "jekyll-paginate"
+# gem "jekyll-seo-tag"
+# gem "jekyll-archives"
+# gem "jekyll-sitemap"
+# gem "jekyll-include-cache"
+
 gem "logger" # Silence deprecation warnings from Ruby 3.5+
 
 gem "html-proofer", "~> 5.0", group: :test
