@@ -6,6 +6,7 @@ tags:
   - Jekyll
   - Blog
 date: 2025-12-11 00:28:00 -0800
+last_modified_at: 2025-12-11 00:35:00 -0800
 image:
   path: /assets/images/posts/mrgreen_blog_home_page.png
   alt: "The old look of my blog with MrGreen"
@@ -28,9 +29,9 @@ While it doesn't support multiple languages simultaneously, the [Chirpy](https:/
 | RSS Feed                                      | ❌                          | ✅                         |
 {: .w-100 }
 
-[^multi-language-mrgreen]: This is impressively well implemented for a statically compiled website template.
-[^multi-language-chirpy]: While it doesn't support multiple languages simultaneously, it does support setting a single locale, and potentially could be expanded to support multiple languages without too much effort.
-[^advanced-search]: There is support for searching, but it is fairly limited and janky when compared to Chirpy's implementation.
+[^multi-language-mrgreen]: MrGreen's multi-language support is impressively well implemented for a statically compiled website template.
+[^multi-language-chirpy]: While Chirpy doesn't support multiple languages simultaneously, it does support setting a single locale, and potentially could be expanded to support multiple languages without too much effort.
+[^advanced-search]: There is support for searching in MrGreen, but it is fairly limited and janky when compared to Chirpy's implementation.
 
 The chirpy theme also had a fairly similar look and feel to what the old theme provided, with a few improvements and a few missing features. So, in a fit of Spite Driven Development (SDD), I set out to add the missing features and make it a fully functional replacement. After a three days of programming, and a bit of AI-assisted debugging, I'd say I did a fairly good job replicating what I had before.
 
@@ -47,6 +48,6 @@ A few of the things I had to adjust:
 - [x] Lots of minor metadata updates and other tweaks
 - [x] Replicating the contact section of the sidebar and adding tooltips
 
-But hey, a little bit of TLC goes a long way.
+But hey, a little bit of elbow grease goes a long way.
 
 Anyway, with the improvements to my personal blog completed, it's time to get back into my current hyperfixation of choice - [NixOS](/tags/nixos/). Stay tuned for some more blog posts, and maybe even some tutorial videos!
