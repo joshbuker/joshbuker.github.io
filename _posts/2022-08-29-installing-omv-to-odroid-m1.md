@@ -1,6 +1,5 @@
 ---
 title: Installing OpenMediaVault to an ODroid M1
-lng_pair: installing_openmediavault_to_an_odroid_m1
 categories:
   - Guides
 tags: []
@@ -10,15 +9,11 @@ date: 2022-08-29 11:00:00 -0700
 
 _Special thanks to Keith Matthews who pointed out trying to install over the top of the ODroid base image._
 
-<!-- outline-start -->
-
 With the global pandemic, the supply chain for microchips (among other things) has gotten thrown all out of balance. Devices that would normally be incredibly cheap and easy to source are now facing huge markups, long shipping times, and a tendency to be out of stock when you need them. The [Raspberry Pi](https://www.raspberrypi.org/) being one of these examples.
 
 Luckily, alternative single-board computers (SBC) are available, many of which for...we'll say acceptable (if not reasonable) costs. One such board being the [ODroid M1](https://www.hardkernel.com/shop/odroid-m1-with-8gbyte-ram/), a device which not only has a decent amount of memory (4GB or 8GB), but also a built-in M.2 slot for blazing fast storage capabilities.
 
 With this in mind, and some fun projects planned ahead, I went ahead and bought my own [ODroid M1 from ameriDroid](https://ameridroid.com/products/odroid-m1), but ran into quite the snag. I couldn't figure out how to actually get the dang thing running what I wanted it to. After a journey comparable to Frodo's trip to Mordor, I finally figured it out with some help from my own fellowship of the ~~ring~~ SBC.
-
-<!-- outline-end -->
 
 ## What you'll need
 

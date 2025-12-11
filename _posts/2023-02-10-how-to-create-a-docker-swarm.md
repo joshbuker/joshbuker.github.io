@@ -1,6 +1,5 @@
 ---
 title: How to create a Docker Swarm
-lng_pair: how_to_create_a_docker_swarm
 categories:
   - Guides
 tags:
@@ -9,13 +8,9 @@ image: "/assets/images/stock/container_ship_swarm.jpg"
 date: 2023-02-10 09:40:00 -0700
 ---
 
-<!-- outline-start -->
-
 Docker Swarm is an easy way to turn a pile of old computers at home into a home lab environment. It can automatically load balance the various services you spin up, and you can use free tools like Portainer to help manage your swarm.
 
 Before you create a Docker Swarm, you'll want to [install Docker](https://joshbuker.com/blog/how-to-install-docker) on all of the nodes (computers) you'll be using in the swarm. You can do this with as few as one manager node, and one worker node.
-
-<!-- outline-end -->
 
 Official Docker documentation: [https://docs.docker.com/engine/swarm/swarm-tutorial/create-swarm/](https://docs.docker.com/engine/swarm/swarm-tutorial/create-swarm/)
 

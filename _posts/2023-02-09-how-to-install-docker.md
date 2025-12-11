@@ -1,6 +1,5 @@
 ---
 title: How to install Docker
-lng_pair: how_to_install_docker
 categories:
   - Guides
 tags:
@@ -9,15 +8,11 @@ image: "/assets/images/stock/container_ship.jpg"
 date: 2023-02-09 21:20:00 -0700
 ---
 
-<!-- outline-start -->
-
 If you're unfamiliar, Docker is an incredible tool that allows for quickly spinning up sandboxes to run virtualized servers and networked applications. It provides an incredibly fast and lightweight alternative to virtual machines, at the cost of less separation between the virtual environment and the host system.
 
 This makes it easy to host services such as Minecraft, Plex, Web Servers, and others. While not quite as scalable as cloud-native code such as serverless, containers still allow for massive improvements in deployment speed, and ease of updates.
 
 I'll be going over what works for the operating systems I'm most familiar with, but you can find other documentation online if you use Mac, Windows, or a different Linux distribution.
-
-<!-- outline-end -->
 
 ## Installing on Ubuntu
 

@@ -1,21 +1,17 @@
 ---
 title: Free Photography Hosting with Cloudflare Pages
-lng_pair: free_photography_hosting_with_cloudflare_pages
 categories:
   - Guides
 tags:
   - Photography
 image: "/assets/images/stock/cloud_lightbulbs.jpg"
 date: 2023-01-25 19:45:00 -0700
+last_modified_at: 2025-12-10 20:30:00 -0800
 ---
-
-<!-- outline-start -->
 
 As a photographer, I've been contemplating various methods of posting my photos online. There's some social media options such as PixelFed or Instagram, but I've done a relatively good job avoiding social media, and there are other issues such as loss of copyright when posting to such platforms.
 
 So, as any good developer does, I decided to stick my photos into Git and automate everything with a CI/CD pipeline instead.
-
-<!-- outline-end -->
 
 My stack looks like:
 
@@ -50,7 +46,7 @@ This can be the hardest part of the process for some...deciding on a good name. 
 
 Something else to consider, are alternative top-level domains, such as `.photos`, `.photography`, and others. For example, you could get `<firstname><lastname>.photography` if you only plan on hosting your photography with the domain name.
 
-There are many domain registrars that you can purchase your domain name through, including Cloudflare. Personally, I highly recommend [Gandi.net](https://gandi.net), who actively supported net neutrality and offer excellent service. I also would strongly encourage avoiding GoDaddy like the plague. Beyond that, most services like namecheap, google domains, etc, are all decent options. It's really up to you on who to use and trust.
+There are many domain registrars that you can purchase your domain name through, including Cloudflare. ~~Personally, I highly recommend [Gandi.net](https://gandi.net), who actively supported net neutrality and offer excellent service.~~[^gandi] I also would strongly encourage avoiding GoDaddy like the plague. Beyond that, most services like namecheap, google domains, etc, are all decent options. It's really up to you on who to use and trust.
 
 Whatever registrar you use, you should be able to follow along to the rest of this guide, just replacing the DNS step with whatever your registrar's equivalent settings pages are.
 
@@ -94,3 +90,5 @@ From the project settings, go to the `Custom domains` tab, and add the domain na
 And with that, you're all set! Any time you want to update your galleries, simply update the photos folder and push up to GitHub. Cloudflare will automatically detect the changes and redeploy your website.
 
 [^free]: Technically the domain name isn't free, but it's around $16/year or less, and can be used for far more than just your photography. It's also optional, and if you really can't afford a domain name, you can just share the automatically generated cloudflare pages domain instead.
+
+[^gandi]: **Update (December 10th, 2025):** Since having been bought by Total Webhosting Solutions, Gandi rapidly enshittified, drastically increasing their pricing and removing previous functionality. Unfortunately, it seems they were a victim of private equity, and are no longer worth using or supporting. These days, I recommend Cloudflare and Porkbun instead.

@@ -1,6 +1,5 @@
 ---
 title: Using Portainer and GitHub for Continuous Deployment
-lng_pair: using_portainer_and_github_for_continuous_deployment
 categories:
   - Guides
   - Homelab
@@ -12,15 +11,11 @@ image: "/assets/images/stock/continuous_deployment.jpg"
 date: 2023-03-16 00:14:00 -0700
 ---
 
-<!-- outline-start -->
-
 Portainer can be combined with a GitHub repo to allow for continuous deployment of docker swarm services, allowing all the benefits of Git to be applied to your stack files.
 
 For those unfamiliar with the terms CI/CD or continuous integration and continuous deployment, they are terms for the automation of testing code and deploying code to production respectively. In particular, usually this is combined with Git so that as code is pushed to a central branch, a test suite will be ran against your changes and if it passes, the code will automatically be released as a new version. In team environments, this testing is usually done when opening a pull request (asking to merge your changes so that others can review it first).
 
 This blog post only covers the deployment aspects that portainer provides, and doesn't cover test suites which depend more on the language/framework you're using, and what CI provider you're using to run the tests (e.g. GitHub Actions, CircleCI, etc).
-
-<!-- outline-end -->
 
 This post assumes that you have a Docker Swarm with portainer already setup, as well as a GitHub account. If you have yet to setup Portainer, see my blog post on [How to Install Portainer](https://joshbuker.com/blog/how-to-install-portainer/).
 

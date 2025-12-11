@@ -9,15 +9,12 @@ tags:
   - GNOME
 image: "/assets/images/posts/nixos.png"
 date: 2025-07-03 08:30:00 -0700
+last_modified_at: 2025-12-10 21:10:00 -0800
 ---
-
-<!-- outline start -->
 
 A quick and simple guide to getting Wireguard running on NixOS when using the Gnome desktop environment (and NetworkManager).
 
-Last updated for NixOS 25.05.
-
-<!-- outline end -->
+Last updated for NixOS 25.11.
 
 ## Requirements
 
@@ -45,6 +42,7 @@ Last updated for NixOS 25.05.
   networking.firewall.checkReversePath = "loose";
 }
 ```
+{: file="configuration.nix" }
 
 You can either create this as a separate `.nix` file and import it with:
 
@@ -55,14 +53,15 @@ You can either create this as a separate `.nix` file and import it with:
   ];
 }
 ```
+{: file="configuration.nix" }
 
 Or simply embed the relevant lines into your existing configuration (e.g. within `configuration.nix`).
 
 - Rebuild to install wg and wg-quick commands and reboot to apply firewall changes
 - Generate a private and public key for wireguard
 
-> NOTE:
 > `umask` will invert the bits given for any new files, in this case it will make the privatekey and publickey files be marked with `700`, or read/write/execute for current user, and no access for group or global.
+{: .prompt-info }
 
 ```sh
 mkdir ~/wireguardtemp
@@ -93,9 +92,10 @@ PublicKey = <server public key>
 Endpoint = <server public ip>:13231
 AllowedIPs = 0.0.0.0/0
 ```
+{: file="home_network.conf" }
 
-> NOTE:
 > You can replace `AllowedIPs = 0.0.0.0/0` with specific ranges to route only traffic destined for your internal network. For example `AllowedIPs = 192.168.0.0/16, 10.0.0.0/8`
+{: .prompt-tip }
 
 - On your wireguard server, create a new peer using the client ***public*** key that you generated, ensuring that the allowed address on the server matches what's set in the `.conf` file
 - Test the configuration with wg-quick to ensure it's working
@@ -116,8 +116,8 @@ wg-quick down ./home_network.conf
 
 - Import the configuration into NetworkManager
 
-> NOTE:
 > Using the GUI to import the file DOES NOT WORK at the time of writing. You MUST use nmcli to add the file.
+{: .prompt-warning }
 
 ```sh
 cd ~/wireguardtemp

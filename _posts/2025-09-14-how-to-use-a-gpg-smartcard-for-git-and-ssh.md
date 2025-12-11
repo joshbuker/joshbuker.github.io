@@ -15,13 +15,9 @@ date: 2025-09-14 13:50:00 -0700
 image: /assets/images/stock/yubikey.jpg
 ---
 
-<!--- outline start -->
-
 A guide on using a GPG compatible SmartCard such as the NitroKey or YubiKey for Git and SSH.
 
 This guide assumes that you are using a YubiKey and NixOS, but should largely be reusable for other SmartCards and Linux Operating Systems.
-
-<!-- outline end -->
 
 > Due to current limitations, you cannot have multiple SmartCards that all work simultaneously using the same keys. You can however copy the backed up keys to a new SmartCard, and only need to change the configuration on your client device(s), not any servers. This is because GPG will look for the serial number of the SmartCard when completing operations, which will only ever point to one card at a time. Also, the stubs created will be unique for each SmartCard despite using the same underlying keys. At time of writing, there are no reasonable workarounds for this issue.
 {: .prompt-info }
@@ -65,6 +61,7 @@ Then in your `~/.bashrc` (or equivalent file if using another shell, e.g. `~/.zs
 export SSH_AUTH_SOCK=$(gpgconf --list-dirs agent-ssh-socket)
 gpgconf --launch gpg-agent
 ```
+{: file=".bashrc" }
 
 You may need to log out and back in to refresh your gpg-agent session.
 
@@ -84,6 +81,7 @@ Within your Nix Configuration, add the following:
   hardware.gpgSmartcards.enable = true;
 }
 ```
+{: file="configuration.nix" }
 
 Using home manager and Nix Flakes (trust me, you want both if you aren't using them yet), create a `.bashrc` file with the following in addition to your other bashrc config:
 
@@ -91,6 +89,7 @@ Using home manager and Nix Flakes (trust me, you want both if you aren't using t
 export SSH_AUTH_SOCK="/run/user/$UID/gnupg/S.gpg-agent.ssh"
 gpgconf --launch gpg-agent
 ```
+{: file=".bashrc" }
 
 Use home manager to source the `.bashrc` file (once you're done following the rest of the setup, you'll also want to add/uncomment .gitconfig and sshcontrol):
 

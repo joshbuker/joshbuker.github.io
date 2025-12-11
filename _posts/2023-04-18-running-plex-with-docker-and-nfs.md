@@ -11,13 +11,9 @@ image: "/assets/images/stock/popcorn.jpg"
 date: 2023-04-18 15:00:00 -0700
 ---
 
-<!-- outline start -->
-
 If you've been following along with some of my previous posts on [Docker](https://joshbuker.com/blog/how-to-install-docker/) and [NFS](https://joshbuker.com/blog/how-to-setup-a-truenas-scale-server/), you may want something you can directly use with your new home network setup.
 
 Plex is a popular self-hosted streaming solution, with client apps for all major platforms. See [plex.tv](https://plex.tv) for more details. Think of it like Netflix, but it uses files on your computer for what you can watch.
-
-<!-- outline-end -->
 
 ## Quick Notes
 
@@ -79,6 +75,7 @@ volumes:
   plex_config: {}
   plex_transcode: {}
 ```
+{: file="compose.yml" }
 
 #### Environment Variables
 

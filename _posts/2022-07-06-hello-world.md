@@ -6,36 +6,14 @@ tags:
   - Blog
 image: "/assets/images/stock/hello_world.jpg"
 date: 2022-07-06 18:48:00 -0700
-pin: true
-
-# seo
-# if not specified, date will be used.
-#meta_modify_date: 2022-07-06 18:48:00 -0700
-# check the meta_common_description in _data/owner/[language].yml
-#meta_description: ""
-
-# optional
-# if you enabled image_viewer_posts you don't need to enable this. This is only if image_viewer_posts = false
-#image_viewer_on: true
-# if you enabled image_lazy_loader_posts you don't need to enable this. This is only if image_lazy_loader_posts = false
-#image_lazy_loader_on: true
-# exclude from on site search
-#on_site_search_exclude: true
-# exclude from search engines
-#search_engine_exclude: true
-# to disable this page, simply set published: false or delete this file
-#published: false
+last_modified_at: 2025-12-10 20:26:00 -0800
 ---
-
-<!-- outline-start -->
 
 Welcome to my first blog post.
 
 As the first post, I feel like this should have some amazing content that folks will look back on and say, "yeah, it was clear from the beginning this would be great." Unfortunately, reality is not so ideal, and instead you get whatever this will end up being.
 
 Perhaps through some stroke of luck, however, this will be engaging enough to be worth your time. Even if it isn't the next [SmarterEveryDay](https://www.smartereveryday.com/) or [~~Joey B Rocket Reviews~~ BPS Space](https://www.youtube.com/channel/UCILl8ozWuxnFYXIe2svjHhg).
-
-<!-- outline-end -->
 
 ## What even is this?
 
@@ -85,7 +63,7 @@ As for the tools themselves:
 
 And in particular:
 - Photography: [ThumbsUp](https://thumbsup.github.io/)
-- Personal website: [Mr. Green](https://github.com/MrGreensWorkshop/MrGreen-JekyllTheme) (which is a theme for [GitHub Pages](https://pages.github.com/), and uses [Jekyll](https://jekyllrb.com/) under the hood)
+- Personal website: ~~[Mr. Green](https://github.com/MrGreensWorkshop/MrGreen-JekyllTheme)~~ [Chirpy](https://github.com/cotes2020/jekyll-theme-chirpy) (which is a theme for [GitHub Pages](https://pages.github.com/), and uses [Jekyll](https://jekyllrb.com/) under the hood)
 
 ---
 

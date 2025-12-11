@@ -8,8 +8,8 @@ tags:
   - NixOS
 image:
   path: /assets/images/posts/nixos.png
-date: 2025-11-20 22:45:00 -0700
-last_modified_at: 2025-12-10 14:20:00 -0700
+date: 2025-11-20 22:45:00 -0800
+last_modified_at: 2025-12-10 14:20:00 -0800
 ---
 
 So you've heard about NixOS, and you want to give it a try. Let's get you started!
@@ -37,8 +37,8 @@ You will be able to choose which desktop environment you want to start with (e.g
 
 ### Step 2: Flash the ISO to a USB drive
 
-> [!info]
 > If you are installing to a VM, instead of flashing the ISO to a installation USB you'll want to provide the ISO directly to your VM manager. There should be a step where it asks you for the installation CD / media, which is when you'll give it the NixOS ISO.
+{: .prompt-info }
 
 There are plenty of programs for creating a installation USB from a USB drive, and it doesn't matter much which one you use.
 
@@ -58,8 +58,8 @@ Usually this means rebooting the computer, and pressing `Escape`, `F2`, `Delete`
 > If for whatever reason you do not get the installation wizard after booting into the USB, it's possible that you switched an Nvidia laptop into dedicated GPU mode, and the installation ISO doesn't have the Nvidia configuration needed by default to display properly. I would recommend switching to integrated graphics mode on your existing operating system until you can finish installing NixOS and configure your nvidia gpu properly.
 {: .prompt-tip }
 
-> [!security-tip]
 > I highly recommend enabling hard drive encryption when setting up the new disk partitions. It will help prevent someone from stealing your data if they gain access to your computer while unattended.
+{: .prompt-security-tip }
 
 Follow the graphical installation process, and you should eventually be able to reboot into your brand new NixOS installation!
 

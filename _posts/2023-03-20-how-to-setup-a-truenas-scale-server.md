@@ -1,6 +1,5 @@
 ---
 title: How to Setup a TrueNAS Scale Server
-lng_pair: how_to_setup_a_truenas_scale_server
 categories:
   - Guides
   - Homelab
@@ -11,11 +10,7 @@ image: "/assets/images/stock/blue_data_center.jpg"
 date: 2023-03-20 22:15:00 -0700
 ---
 
-<!-- outline-start -->
-
 This blog post will get you started with the minimum you need to stand up a TrueNAS Scale Server and create NFS share(s) for docker persisted volumes.
-
-<!-- outline-end -->
 
 See also, the TrueNAS Scale Official Documentation:
 - [Adding and Managing Datasets](https://www.truenas.com/docs/scale/scaletutorials/storage/datasets/datasetsscale/)

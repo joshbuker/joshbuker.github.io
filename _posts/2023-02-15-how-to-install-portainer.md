@@ -1,6 +1,5 @@
 ---
 title: How to install Portainer
-lng_pair: how_to_install_portainer
 categories:
   - Guides
 tags:
@@ -9,13 +8,9 @@ image: "/assets/images/stock/portainer.jpg"
 date: 2023-02-15 09:00:00 -0700
 ---
 
-<!-- outline-start -->
-
 Portainer is a useful GUI tool for interfacing with Docker. It runs as a container stack, and communicates directly with Docker itself.
 
 Portainer particularly shines when managing a Docker Swarm.
-
-<!-- outline-end -->
 
 ## Docker Swarm Mode
 
@@ -81,6 +76,7 @@ networks:
 volumes:
   portainer_data:
 ```
+{: file="compose.yml" }
 
 Once you have a stack file, deploy the stack to your swarm from a manager node using:
 
