@@ -193,3 +193,54 @@ a.site-title.stack {
   }
   4%, 100% {  text-shadow: none; transform: none; }
 }
+
+/* Custom prompts */
+.prompt-custom {
+  background: rgba(var(--callout-color), 0.12);
+
+  &::before {
+    content: var(--callout-icon);
+    color: rgba(var(--callout-color), 1);
+    font-family: "Font Awesome 7 Free";
+    font-weight: 700;
+    font-size: 1rem;
+  }
+}
+
+// TODO: Use Lucide icons to match Obsidian style better
+.prompt-missing-docs {
+  @extend .prompt-custom;
+  --callout-color: 146, 167, 252;
+  --callout-icon: "\f02d"; /* fa-book */
+}
+
+.prompt-dna {
+  @extend .prompt-custom;
+  --callout-color: 98, 212, 170;
+  --callout-icon: "\f471"; /* fa-dna */
+}
+
+.prompt-security-warning {
+  @extend .prompt-custom;
+  --callout-color: 252, 212, 98;
+  --callout-icon: "\f3ed"; /* fa-shield-halved */
+}
+
+.prompt-security-tip {
+  @extend .prompt-custom;
+  --callout-color: 83, 223, 221;
+  --callout-icon: "\f3ed"; /* fa-shield-halved */
+}
+
+.prompt-code {
+  @extend .prompt-custom;
+  --callout-color: 98, 212, 170;
+  --callout-icon: "\f121"; /* fa-code */
+}
+
+/* Dark mode tweaks */
+html[data-mode="dark"] .prompt-custom {
+  background: rgba(var(--callout-color), 0.2);
+  // border-left-color: rgba(var(--callout-color), 0.7);
+  color: #fff;
+}
