@@ -4,7 +4,13 @@ categories:
   - Journaling
 tags:
   - Blog
-image: "/assets/images/stock/hello_world.jpg"
+  - Ruby on Rails
+  - Obsidian
+  - Portfolio
+  - GitHub
+  - Jekyll
+  - Quasar
+image: /assets/images/stock/hello_world.jpg
 date: 2022-07-06 18:48:00 -0700
 last_modified_at: 2025-12-10 20:26:00 -0800
 ---
