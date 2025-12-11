@@ -6,7 +6,9 @@ tags:
   - Engineering
   - PPM
   - PWM
-image: "/assets/images/posts/rising_vs_falling_edge.jpg"
+image:
+  path: "/assets/images/posts/rising_vs_falling_edge.jpg"
+  alt: Rising vs Falling Edge
 ---
 
 <!--

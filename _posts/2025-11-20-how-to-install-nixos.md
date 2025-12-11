@@ -6,7 +6,8 @@ categories:
   - NixOS
 tags:
   - NixOS
-image: /assets/images/posts/nixos.png
+image:
+  path: /assets/images/posts/nixos.png
 date: 2025-11-20 22:45:00 -0700
 last_modified_at: 2025-12-10 14:20:00 -0700
 ---
