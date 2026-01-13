@@ -19,5 +19,16 @@ A simple, to the point guide on how to add a new nix package to Nixpkgs.
 
 ## Commits
 
-- Add yourself to the maintainers list
+Add yourself to the maintainers list
 
+```nix
+{
+  handle = {
+    name = "Your Name";
+    email = "email@example.com";
+    github = "githubHandle";
+    githubId = 1234567;
+  }
+}
+```
+{: file="maintainers/maintainer-list.nix" }
