@@ -12,11 +12,6 @@
   url:  'https://infosec.exchange/@joshbuker'
   tooltip: "Mastodon"
 
-- type: instagram
-  icon: "fab fa-instagram"
-  url: "https://www.instagram.com/joshbuker/"
-  tooltip: "Instagram"
-
 - type: youtube
   icon: "fab fa-youtube"
   url: "https://www.youtube.com/@JoshBuker"
