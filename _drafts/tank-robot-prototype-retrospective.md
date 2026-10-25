@@ -26,6 +26,8 @@ There were two iterations of the Tank Robot so far, although I may revisit it on
   loop=true
 %}
 
+I wrote a few Devlogs along the way, which you can read about
+
 The second iteration of the robot was actually in the middle of working on a boat robot with Keith Matthews, and was more about proving that the techniques we were using for the boat robot could be translated to ground based vehicles as well.
 
 {%
