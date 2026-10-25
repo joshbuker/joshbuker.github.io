@@ -7,7 +7,7 @@ tags:
   - Documentation
   - Markdown
   - Obsidian
-date: 2026-10-24 19:11:00 -0800
+date: 2026-10-24 19:11:00 -0700
 ---
 If you've tried using AI, you've probably run into it making really stupid decisions that you'd expect a typical person to easily avoid. Even if you hate AI on principle and refuse to use it, the solution to making AI less dumb actually benefits humans just as much as machines. Long story short, it's writing good documentation.
 
