@@ -59,7 +59,7 @@ Even if AI goes away (rising costs and enshittification comes for us all, in tim
 
 So, in short:
 
-1) Write documentation
-2) Use markdown for said documentation
-3) ???
-4) Profit
+1. Write documentation
+2. Use markdown for said documentation
+3. ???
+4. Profit
